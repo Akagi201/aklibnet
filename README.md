@@ -1,3 +1,11 @@
+
+
+
+## Refs
+* [使用libnet与libpcap构造TCP/IP协议软件](http://www.ibm.com/developerworks/cn/linux/l-tcpip/)
+
+-------------------------------------------------------------------------------
+
 ===============================================================================
     LIBNET 1.1 (c) 1998 - 2004 Mike D. Schiffman <mike@infonexus.com>
         http://www.packetfactory.net/libnet

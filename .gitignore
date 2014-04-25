@@ -99,3 +99,5 @@ missing
 stamp-*
 tags
 version.h
+/.cproject
+/.project
