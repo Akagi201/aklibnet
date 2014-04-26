@@ -48,7 +48,7 @@ headers! Also, it's definitions have conflicted with the system's on AIX.
 #ifndef BPF_MAJOR_VERSION
 
 /* BSD style release date */
-#define BPF_RELEASE 199606
+#define BPF_RELEASE (199606)
 
 typedef	int bpf_int32;
 typedef	u_int bpf_u_int32;
@@ -60,9 +60,9 @@ typedef	u_int bpf_u_int32;
 #define BPF_ALIGNMENT sizeof(bpf_int32)
 #define BPF_WORDALIGN(x) (((x)+(BPF_ALIGNMENT-1))&~(BPF_ALIGNMENT-1))
 
-#define BPF_MAXINSNS 512
-#define BPF_MAXBUFSIZE 0x8000
-#define BPF_MINBUFSIZE 32
+#define BPF_MAXINSNS (512)
+#define BPF_MAXBUFSIZE (0x8000)
+#define BPF_MINBUFSIZE (32)
 
 /*
  *  Structure for BIOCSETF.
@@ -96,8 +96,8 @@ struct bpf_version {
 	u_short bv_minor;
 };
 /* Current version number of filter architecture. */
-#define BPF_MAJOR_VERSION 1
-#define BPF_MINOR_VERSION 1
+#define BPF_MAJOR_VERSION (1)
+#define BPF_MINOR_VERSION (1)
 
 /*
  * BPF ioctls
@@ -156,83 +156,83 @@ struct bpf_hdr {
  * Only the kernel needs to know about it; applications use bh_hdrlen.
  */
 #ifdef KERNEL
-#define SIZEOF_BPF_HDR 18
+#define SIZEOF_BPF_HDR (18)
 #endif
 
 /*
  * Data-link level type codes.
  */
-#define DLT_NULL	0	/* no link-layer encapsulation */
-#define DLT_EN10MB	1	/* Ethernet (10Mb) */
-#define DLT_EN3MB	2	/* Experimental Ethernet (3Mb) */
-#define DLT_AX25	3	/* Amateur Radio AX.25 */
-#define DLT_PRONET	4	/* Proteon ProNET Token Ring */
-#define DLT_CHAOS	5	/* Chaos */
-#define DLT_IEEE802	6	/* IEEE 802 Networks */
-#define DLT_ARCNET	7	/* ARCNET */
-#define DLT_SLIP	8	/* Serial Line IP */
-#define DLT_PPP		9	/* Point-to-point Protocol */
-#define DLT_FDDI	10	/* FDDI */
-#define DLT_ATM_RFC1483	11	/* LLC/SNAP encapsulated atm */
-#define DLT_RAW		12	/* raw IP */
-#define DLT_SLIP_BSDOS	13	/* BSD/OS Serial Line IP */
-#define DLT_PPP_BSDOS	14	/* BSD/OS Point-to-point Protocol */
+#define DLT_NULL	(0)	/* no link-layer encapsulation */
+#define DLT_EN10MB	(1)	/* Ethernet (10Mb) */
+#define DLT_EN3MB	(2)	/* Experimental Ethernet (3Mb) */
+#define DLT_AX25	(3)	/* Amateur Radio AX.25 */
+#define DLT_PRONET	(4)	/* Proteon ProNET Token Ring */
+#define DLT_CHAOS	(5)	/* Chaos */
+#define DLT_IEEE802	(6)	/* IEEE 802 Networks */
+#define DLT_ARCNET	(7)	/* ARCNET */
+#define DLT_SLIP	(8)	/* Serial Line IP */
+#define DLT_PPP		(9)	/* Point-to-point Protocol */
+#define DLT_FDDI	(10)	/* FDDI */
+#define DLT_ATM_RFC1483	(11)	/* LLC/SNAP encapsulated atm */
+#define DLT_RAW		(12)	/* raw IP */
+#define DLT_SLIP_BSDOS	(13)	/* BSD/OS Serial Line IP */
+#define DLT_PPP_BSDOS	(14)	/* BSD/OS Point-to-point Protocol */
 
 /*
  * The instruction encondings.
  */
 /* instruction classes */
 #define BPF_CLASS(code) ((code) & 0x07)
-#define		BPF_LD		0x00
-#define		BPF_LDX		0x01
-#define		BPF_ST		0x02
-#define		BPF_STX		0x03
-#define		BPF_ALU		0x04
-#define		BPF_JMP		0x05
-#define		BPF_RET		0x06
-#define		BPF_MISC	0x07
+#define		BPF_LD		(0x00)
+#define		BPF_LDX		(0x01)
+#define		BPF_ST		(0x02)
+#define		BPF_STX		(0x03)
+#define		BPF_ALU		(0x04)
+#define		BPF_JMP		(0x05)
+#define		BPF_RET		(0x06)
+#define		BPF_MISC	(0x07)
 
 /* ld/ldx fields */
 #define BPF_SIZE(code)	((code) & 0x18)
-#define		BPF_W		0x00
-#define		BPF_H		0x08
-#define		BPF_B		0x10
+#define		BPF_W		(0x00)
+#define		BPF_H		(0x08)
+#define		BPF_B		(0x10)
 #define BPF_MODE(code)	((code) & 0xe0)
-#define		BPF_IMM 	0x00
-#define		BPF_ABS		0x20
-#define		BPF_IND		0x40
-#define		BPF_MEM		0x60
-#define		BPF_LEN		0x80
-#define		BPF_MSH		0xa0
+#define		BPF_IMM 	(0x00)
+#define		BPF_ABS		(0x20)
+#define		BPF_IND		(0x40)
+#define		BPF_MEM		(0x60)
+#define		BPF_LEN		(0x80)
+#define		BPF_MSH		(0xa0)
 
 /* alu/jmp fields */
 #define BPF_OP(code)	((code) & 0xf0)
-#define		BPF_ADD		0x00
-#define		BPF_SUB		0x10
-#define		BPF_MUL		0x20
-#define		BPF_DIV		0x30
-#define		BPF_OR		0x40
-#define		BPF_AND		0x50
-#define		BPF_LSH		0x60
-#define		BPF_RSH		0x70
-#define		BPF_NEG		0x80
-#define		BPF_JA		0x00
-#define		BPF_JEQ		0x10
-#define		BPF_JGT		0x20
-#define		BPF_JGE		0x30
-#define		BPF_JSET	0x40
+#define		BPF_ADD		(0x00)
+#define		BPF_SUB		(0x10)
+#define		BPF_MUL		(0x20)
+#define		BPF_DIV		(0x30)
+#define		BPF_OR		(0x40)
+#define		BPF_AND		(0x50)
+#define		BPF_LSH		(0x60)
+#define		BPF_RSH		(0x70)
+#define		BPF_NEG		(0x80)
+#define		BPF_JA		(0x00)
+#define		BPF_JEQ		(0x10)
+#define		BPF_JGT		(0x20)
+#define		BPF_JGE		(0x30)
+#define		BPF_JSET	(0x40)
 #define BPF_SRC(code)	((code) & 0x08)
-#define		BPF_K		0x00
-#define		BPF_X		0x08
+#define		BPF_K		(0x00)
+#define		BPF_X		(0x08)
 
 /* ret - BPF_K and BPF_X also apply */
 #define BPF_RVAL(code)	((code) & 0x18)
-#define		BPF_A		0x10
+#define		BPF_A		(0x10)
 
 /* misc */
 #define BPF_MISCOP(code) ((code) & 0xf8)
-#define		BPF_TAX		0x00
-#define		BPF_TXA		0x80
+#define		BPF_TAX		(0x00)
+#define		BPF_TXA		(0x80)
 
 /*
  * The instruction data structure.
@@ -264,6 +264,6 @@ extern u_int bpf_filter(struct bpf_insn *, u_char *, u_int, u_int);
 /*
  * Number of scratch memory words (for BPF_LD|BPF_MEM and BPF_ST).
  */
-#define BPF_MEMWORDS 16
+#define BPF_MEMWORDS (16)
 
 #endif

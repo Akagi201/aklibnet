@@ -39,79 +39,79 @@
 /*
  * Libnet defines header sizes for every builder function exported.
  */
-#define LIBNET_802_1Q_H         0x12    /**< 802.1Q header:       18 bytes */
-#define LIBNET_802_1X_H         0x04    /**< 802.1X header:        4 bytes */
-#define LIBNET_802_2_H          0x03    /**< 802.2 LLC header:     3 bytes */
-#define LIBNET_802_2SNAP_H      0x08    /**< 802.2 LLC/SNAP header:8 bytes */
-#define LIBNET_802_3_H          0x0e    /**< 802.3 header:        14 bytes */
-#define LIBNET_ARP_H            0x08    /**< ARP header w/o addrs: 8 bytes */
-#define LIBNET_ARP_ETH_IP_H     0x1c    /**< ARP w/ ETH and IP:   28 bytes */
-#define LIBNET_BGP4_HEADER_H    0x13    /**< BGP header:          19 bytes */
-#define LIBNET_BGP4_OPEN_H      0x0a    /**< BGP open header:     10 bytes */
-#define LIBNET_BGP4_UPDATE_H    0x04    /**< BGP open header:      4 bytes */
-#define LIBNET_BGP4_NOTIFICATION_H 0x02 /**< BGP notif. header:    2 bytes */
-#define LIBNET_CDP_H            0x08    /**< CDP header base:      8 bytes */
-#define LIBNET_DHCPV4_H         0xf0    /**< DHCP v4 header:     240 bytes */
-#define LIBNET_UDP_DNSV4_H      0x0c    /**< UDP DNS v4 header:   12 bytes */
-#define LIBNET_TCP_DNSV4_H      0x0e    /**< TCP DNS v4 header:   14 bytes */
-#define LIBNET_ETH_H            0x0e    /**< Ethernet header:     14 bytes */
-#define LIBNET_FDDI_H           0x15    /**< FDDI header:         21 bytes */
-#define LIBNET_ICMPV4_H         0x04    /**< ICMP header base:     4 bytes */
-#define LIBNET_ICMPV4_ECHO_H    0x08    /**< ICMP_ECHO header:     8 bytes */
-#define LIBNET_ICMPV4_MASK_H    0x0c    /**< ICMP_MASK header:    12 bytes */
-#define LIBNET_ICMPV4_UNREACH_H  0x08   /**< ICMP_UNREACH header:  8 bytes */
-#define LIBNET_ICMPV4_TIMXCEED_H 0x08   /**< ICMP_TIMXCEED header: 8 bytes */
-#define LIBNET_ICMPV4_REDIRECT_H 0x08   /**< ICMP_REDIRECT header: 8 bytes */
-#define LIBNET_ICMPV4_TS_H      0x14    /**< ICMP_TIMESTAMP headr:20 bytes */
-#define LIBNET_ICMPV6_COMMON_H  0x04    /**< ICMP6 header base:    4 bytes */
-#define LIBNET_ICMPV6_H         0x08    /**< ICMP6 header base:    8 bytes (unused, for backwards compatibility) */
-#define LIBNET_ICMPV6_UNREACH_H 0x08    /**< ICMP6 unreach base:   8 bytes */
-#define LIBNET_ICMPV6_ECHO_H    0x08    /**< ICMP6 echo:           8 bytes */
-#define LIBNET_ICMPV6_NDP_NSOL_H  24    /**< ICMP6 NDP NSOL:      24 bytes */
-#define LIBNET_ICMPV6_NDP_NADV_H  24    /**< ICMP6 NDP NADV:      24 bytes */
-#define LIBNET_ICMPV6_NDP_OPT_H 0x02    /**< ICMP6 NDP OPT base:   2 bytes */
-#define LIBNET_IGMP_H           0x08    /**< IGMP header:          8 bytes */
-#define LIBNET_IPV4_H           0x14    /**< IPv4 header:         20 bytes */
-#define LIBNET_IPV6_H           0x28    /**< IPv6 header:         40 bytes */
-#define LIBNET_IPV6_FRAG_H      0x08    /**< IPv6 frag header:     8 bytes */
-#define LIBNET_IPV6_ROUTING_H   0x04    /**< IPv6 frag header base:4 bytes */
-#define LIBNET_IPV6_DESTOPTS_H  0x02    /**< IPv6 dest opts base:  2 bytes */
-#define LIBNET_IPV6_HBHOPTS_H   0x02    /**< IPv6 hop/hop opt base:2 bytes */
-#define LIBNET_IPSEC_ESP_HDR_H  0x0c    /**< IPSEC ESP header:    12 bytes */
-#define LIBNET_IPSEC_ESP_FTR_H  0x02    /**< IPSEC ESP footer:     2 bytes */
-#define LIBNET_IPSEC_AH_H       0x10    /**< IPSEC AH header:     16 bytes */
-#define LIBNET_ISL_H            0x1a    /**< ISL header:          26 bytes */
-#define LIBNET_GRE_H            0x04    /**< GRE header:           4 bytes */
-#define LIBNET_GRE_SRE_H        0x04    /**< GRE SRE header:       4 bytes */
-#define LIBNET_MPLS_H           0x04    /**< MPLS header:          4 bytes */
-#define LIBNET_OSPF_H           0x10    /**< OSPF header:         16 bytes */
-#define LIBNET_OSPF_HELLO_H     0x18    /**< OSPF hello header:   24 bytes */
-#define LIBNET_OSPF_DBD_H       0x08    /**< OSPF DBD header:      8 bytes */
-#define LIBNET_OSPF_LSR_H       0x0c    /**< OSPF LSR header:     12 bytes */
-#define LIBNET_OSPF_LSU_H       0x04    /**< OSPF LSU header:      4 bytes */
-#define LIBNET_OSPF_LSA_H       0x14    /**< OSPF LSA header:     20 bytes */
-#define LIBNET_OSPF_AUTH_H      0x08    /**< OSPF AUTH header:     8 bytes */
-#define LIBNET_OSPF_CKSUM       0x10    /**< OSPF CKSUM header:   16 bytes */
-#define LIBNET_OSPF_LS_RTR_H    0x10    /**< OSPF LS RTR header:  16 bytes */
-#define LIBNET_OSPF_LS_NET_H    0x08    /**< OSPF LS NET header:   8 bytes */
-#define LIBNET_OSPF_LS_SUM_H    0x0c    /**< OSPF LS SUM header:  12 bytes */
-#define LIBNET_OSPF_LS_AS_EXT_H 0x10    /**< OSPF LS AS header:   16 bytes */
-#define LIBNET_NTP_H            0x30    /**< NTP header:          48 bytes */
-#define LIBNET_RIP_H            0x18    /**< RIP header base:     24 bytes */
-#define LIBNET_RPC_CALL_H       0x28    /**< RPC header:          40 bytes
-                                         * (assuming 8 byte auth header)
-                                         */
-#define LIBNET_RPC_CALL_TCP_H   0x2c    /**< RPC header:          44 bytes
-                                         * (with record marking)
-                                         */
-#define LIBNET_SEBEK_H          0x30    /* sebek header:          48 bytes */   
-#define LIBNET_STP_CONF_H       0x23    /**< STP conf header:     35 bytes */
-#define LIBNET_STP_TCN_H        0x04    /**< STP tcn header:       4 bytes */
-#define LIBNET_TOKEN_RING_H     0x16    /**< Token Ring header:   22 bytes */
-#define LIBNET_TCP_H            0x14    /**< TCP header:          20 bytes */
-#define LIBNET_UDP_H            0x08    /**< UDP header:           8 bytes */
-#define LIBNET_VRRP_H           0x08    /**< VRRP header:          8 bytes */
-#define LIBNET_HSRP_H           0x14    /**< HSRP header:          8 bytes */
+#define LIBNET_802_1Q_H         (0x12)    /**< 802.1Q header:       18 bytes */
+#define LIBNET_802_1X_H         (0x04)    /**< 802.1X header:        4 bytes */
+#define LIBNET_802_2_H          (0x03)    /**< 802.2 LLC header:     3 bytes */
+#define LIBNET_802_2SNAP_H      (0x08)    /**< 802.2 LLC/SNAP header:8 bytes */
+#define LIBNET_802_3_H          (0x0e)    /**< 802.3 header:        14 bytes */
+#define LIBNET_ARP_H            (0x08)    /**< ARP header w/o addrs: 8 bytes */
+#define LIBNET_ARP_ETH_IP_H     (0x1c)    /**< ARP w/ ETH and IP:   28 bytes */
+#define LIBNET_BGP4_HEADER_H    (0x13)    /**< BGP header:          19 bytes */
+#define LIBNET_BGP4_OPEN_H      (0x0a)    /**< BGP open header:     10 bytes */
+#define LIBNET_BGP4_UPDATE_H    (0x04)    /**< BGP open header:      4 bytes */
+#define LIBNET_BGP4_NOTIFICATION_H (0x02) /**< BGP notif. header:    2 bytes */
+#define LIBNET_CDP_H            (0x08)    /**< CDP header base:      8 bytes */
+#define LIBNET_DHCPV4_H         (0xf0)    /**< DHCP v4 header:     240 bytes */
+#define LIBNET_UDP_DNSV4_H      (0x0c)    /**< UDP DNS v4 header:   12 bytes */
+#define LIBNET_TCP_DNSV4_H      (0x0e)    /**< TCP DNS v4 header:   14 bytes */
+#define LIBNET_ETH_H            (0x0e)    /**< Ethernet header:     14 bytes */
+#define LIBNET_FDDI_H           (0x15)    /**< FDDI header:         21 bytes */
+#define LIBNET_ICMPV4_H         (0x04)    /**< ICMP header base:     4 bytes */
+#define LIBNET_ICMPV4_ECHO_H    (0x08)    /**< ICMP_ECHO header:     8 bytes */
+#define LIBNET_ICMPV4_MASK_H    (0x0c)    /**< ICMP_MASK header:    12 bytes */
+#define LIBNET_ICMPV4_UNREACH_H  (0x08)   /**< ICMP_UNREACH header:  8 bytes */
+#define LIBNET_ICMPV4_TIMXCEED_H (0x08)   /**< ICMP_TIMXCEED header: 8 bytes */
+#define LIBNET_ICMPV4_REDIRECT_H (0x08)   /**< ICMP_REDIRECT header: 8 bytes */
+#define LIBNET_ICMPV4_TS_H      (0x14)    /**< ICMP_TIMESTAMP headr:20 bytes */
+#define LIBNET_ICMPV6_COMMON_H  (0x04)    /**< ICMP6 header base:    4 bytes */
+#define LIBNET_ICMPV6_H         (0x08)    /**< ICMP6 header base:    8 bytes (unused, for backwards compatibility) */
+#define LIBNET_ICMPV6_UNREACH_H (0x08)    /**< ICMP6 unreach base:   8 bytes */
+#define LIBNET_ICMPV6_ECHO_H    (0x08)    /**< ICMP6 echo:           8 bytes */
+#define LIBNET_ICMPV6_NDP_NSOL_H  (24)    /**< ICMP6 NDP NSOL:      24 bytes */
+#define LIBNET_ICMPV6_NDP_NADV_H  (24)    /**< ICMP6 NDP NADV:      24 bytes */
+#define LIBNET_ICMPV6_NDP_OPT_H (0x02)    /**< ICMP6 NDP OPT base:   2 bytes */
+#define LIBNET_IGMP_H           (0x08)    /**< IGMP header:          8 bytes */
+#define LIBNET_IPV4_H           (0x14)    /**< IPv4 header:         20 bytes */
+#define LIBNET_IPV6_H           (0x28)    /**< IPv6 header:         40 bytes */
+#define LIBNET_IPV6_FRAG_H      (0x08)    /**< IPv6 frag header:     8 bytes */
+#define LIBNET_IPV6_ROUTING_H   (0x04)    /**< IPv6 frag header base:4 bytes */
+#define LIBNET_IPV6_DESTOPTS_H  (0x02)    /**< IPv6 dest opts base:  2 bytes */
+#define LIBNET_IPV6_HBHOPTS_H   (0x02)    /**< IPv6 hop/hop opt base:2 bytes */
+#define LIBNET_IPSEC_ESP_HDR_H  (0x0c)    /**< IPSEC ESP header:    12 bytes */
+#define LIBNET_IPSEC_ESP_FTR_H  (0x02)    /**< IPSEC ESP footer:     2 bytes */
+#define LIBNET_IPSEC_AH_H       (0x10)    /**< IPSEC AH header:     16 bytes */
+#define LIBNET_ISL_H            (0x1a)    /**< ISL header:          26 bytes */
+#define LIBNET_GRE_H            (0x04)    /**< GRE header:           4 bytes */
+#define LIBNET_GRE_SRE_H        (0x04)    /**< GRE SRE header:       4 bytes */
+#define LIBNET_MPLS_H           (0x04)    /**< MPLS header:          4 bytes */
+#define LIBNET_OSPF_H           (0x10)    /**< OSPF header:         16 bytes */
+#define LIBNET_OSPF_HELLO_H     (0x18)    /**< OSPF hello header:   24 bytes */
+#define LIBNET_OSPF_DBD_H       (0x08)    /**< OSPF DBD header:      8 bytes */
+#define LIBNET_OSPF_LSR_H       (0x0c)    /**< OSPF LSR header:     12 bytes */
+#define LIBNET_OSPF_LSU_H       (0x04)    /**< OSPF LSU header:      4 bytes */
+#define LIBNET_OSPF_LSA_H       (0x14)    /**< OSPF LSA header:     20 bytes */
+#define LIBNET_OSPF_AUTH_H      (0x08)    /**< OSPF AUTH header:     8 bytes */
+#define LIBNET_OSPF_CKSUM       (0x10)    /**< OSPF CKSUM header:   16 bytes */
+#define LIBNET_OSPF_LS_RTR_H    (0x10)    /**< OSPF LS RTR header:  16 bytes */
+#define LIBNET_OSPF_LS_NET_H    (0x08)    /**< OSPF LS NET header:   8 bytes */
+#define LIBNET_OSPF_LS_SUM_H    (0x0c)    /**< OSPF LS SUM header:  12 bytes */
+#define LIBNET_OSPF_LS_AS_EXT_H (0x10)    /**< OSPF LS AS header:   16 bytes */
+#define LIBNET_NTP_H            (0x30)    /**< NTP header:          48 bytes */
+#define LIBNET_RIP_H            (0x18)    /**< RIP header base:     24 bytes */
+#define LIBNET_RPC_CALL_H       (0x28)    /**< RPC header:          40 bytes
+                                           * (assuming 8 byte auth header)
+                                           */
+#define LIBNET_RPC_CALL_TCP_H   (0x2c)    /**< RPC header:          44 bytes
+                                           * (with record marking)
+                                           */
+#define LIBNET_SEBEK_H          (0x30)    /* sebek header:          48 bytes */
+#define LIBNET_STP_CONF_H       (0x23)    /**< STP conf header:     35 bytes */
+#define LIBNET_STP_TCN_H        (0x04)    /**< STP tcn header:       4 bytes */
+#define LIBNET_TOKEN_RING_H     (0x16)    /**< Token Ring header:   22 bytes */
+#define LIBNET_TCP_H            (0x14)    /**< TCP header:          20 bytes */
+#define LIBNET_UDP_H            (0x08)    /**< UDP header:           8 bytes */
+#define LIBNET_VRRP_H           (0x08)    /**< VRRP header:          8 bytes */
+#define LIBNET_HSRP_H           (0x14)    /**< HSRP header:          8 bytes */
 
 /*
  * IEEE 802.1Q (Virtual Local Area Network) VLAN header, static header 
@@ -137,11 +137,11 @@ struct libnet_802_1x_hdr
 {
     uint8_t dot1x_version;               /**< protocol version */
     uint8_t dot1x_type;                  /**< frame type */
-#define LIBNET_802_1X_PACKET    0x00      /**< 802.1x packet */
-#define LIBNET_802_1X_START     0x01      /**< 802.1x start */
-#define LIBNET_802_1X_LOGOFF    0x02      /**< 802.1x logoff */
-#define LIBNET_802_1X_KEY       0x03      /**< 802.1x key */
-#define LIBNET_802_1X_ENCASFAL  0x04      /**< 802.1x encasfal */
+#define LIBNET_802_1X_PACKET    (0x00)      /**< 802.1x packet */
+#define LIBNET_802_1X_START     (0x01)      /**< 802.1x start */
+#define LIBNET_802_1X_LOGOFF    (0x02)      /**< 802.1x logoff */
+#define LIBNET_802_1X_KEY       (0x03)      /**< 802.1x key */
+#define LIBNET_802_1X_ENCASFAL  (0x04)      /**< 802.1x encasfal */
     uint16_t dot1x_length;               /**< total frame length */
 };  
 
@@ -154,8 +154,8 @@ struct libnet_802_2_hdr
 {
     uint8_t llc_dsap;            /* destination service access point */
     uint8_t llc_ssap;            /* source service access point */
-#define LIBNET_SAP_STP          0x42
-#define LIBNET_SAP_SNAP         0xaa
+#define LIBNET_SAP_STP          (0x42)
+#define LIBNET_SAP_SNAP         (0xaa)
     uint8_t llc_control;         /* control field */
 };
 
@@ -196,30 +196,30 @@ struct libnet_802_3_hdr
 struct libnet_arp_hdr
 {
     uint16_t ar_hrd;         /* format of hardware address */
-#define ARPHRD_NETROM   0   /* from KA9Q: NET/ROM pseudo */
-#define ARPHRD_ETHER    1   /* Ethernet 10Mbps */
-#define ARPHRD_EETHER   2   /* Experimental Ethernet */
-#define ARPHRD_AX25     3   /* AX.25 Level 2 */
-#define ARPHRD_PRONET   4   /* PROnet token ring */
-#define ARPHRD_CHAOS    5   /* Chaosnet */
-#define ARPHRD_IEEE802  6   /* IEEE 802.2 Ethernet/TR/TB */
-#define ARPHRD_ARCNET   7   /* ARCnet */
-#define ARPHRD_APPLETLK 8   /* APPLEtalk */
-#define ARPHRD_LANSTAR  9   /* Lanstar */
-#define ARPHRD_DLCI     15  /* Frame Relay DLCI */
-#define ARPHRD_ATM      19  /* ATM */
-#define ARPHRD_METRICOM 23  /* Metricom STRIP (new IANA id) */
-#define ARPHRD_IPSEC    31  /* IPsec tunnel */
+#define ARPHRD_NETROM   (0)   /* from KA9Q: NET/ROM pseudo */
+#define ARPHRD_ETHER    (1)   /* Ethernet 10Mbps */
+#define ARPHRD_EETHER   (2)   /* Experimental Ethernet */
+#define ARPHRD_AX25     (3)   /* AX.25 Level 2 */
+#define ARPHRD_PRONET   (4)   /* PROnet token ring */
+#define ARPHRD_CHAOS    (5)   /* Chaosnet */
+#define ARPHRD_IEEE802  (6)   /* IEEE 802.2 Ethernet/TR/TB */
+#define ARPHRD_ARCNET   (7)   /* ARCnet */
+#define ARPHRD_APPLETLK (8)   /* APPLEtalk */
+#define ARPHRD_LANSTAR  (9)   /* Lanstar */
+#define ARPHRD_DLCI     (15)  /* Frame Relay DLCI */
+#define ARPHRD_ATM      (19)  /* ATM */
+#define ARPHRD_METRICOM (23)  /* Metricom STRIP (new IANA id) */
+#define ARPHRD_IPSEC    (31)  /* IPsec tunnel */
     uint16_t ar_pro;         /* format of protocol address */
     uint8_t  ar_hln;         /* length of hardware address */
     uint8_t  ar_pln;         /* length of protocol addres */
     uint16_t ar_op;          /* operation type */
-#define ARPOP_REQUEST    1  /* req to resolve address */
-#define ARPOP_REPLY      2  /* resp to previous request */
-#define ARPOP_REVREQUEST 3  /* req protocol address given hardware */
-#define ARPOP_REVREPLY   4  /* resp giving protocol address */
-#define ARPOP_INVREQUEST 8  /* req to identify peer */
-#define ARPOP_INVREPLY   9  /* resp identifying peer */
+#define ARPOP_REQUEST    (1)  /* req to resolve address */
+#define ARPOP_REPLY      (2)  /* resp to previous request */
+#define ARPOP_REVREQUEST (3)  /* req protocol address given hardware */
+#define ARPOP_REVREPLY   (4)  /* resp giving protocol address */
+#define ARPOP_INVREQUEST (8)  /* req to identify peer */
+#define ARPOP_INVREPLY   (9)  /* resp identifying peer */
     /* address information allocated dynamically */
 };
 
@@ -230,14 +230,14 @@ struct libnet_arp_hdr
  */
 struct libnet_bgp4_header_hdr
 {
-#define LIBNET_BGP4_MARKER_SIZE   16
+#define LIBNET_BGP4_MARKER_SIZE   (16)
     uint8_t marker[LIBNET_BGP4_MARKER_SIZE];
     uint16_t len;
     uint8_t type;
-#define LIBNET_BGP4_OPEN          1
-#define LIBNET_BGP4_UPDATE        2
-#define LIBNET_BGP4_NOTIFICATION  3
-#define LIBNET_BGP4_KEEPALIVE     4
+#define LIBNET_BGP4_OPEN          (1)
+#define LIBNET_BGP4_UPDATE        (2)
+#define LIBNET_BGP4_NOTIFICATION  (3)
+#define LIBNET_BGP4_KEEPALIVE     (4)
 };
 
 /*
@@ -264,25 +264,25 @@ struct libnet_bgp4_open_hdr
  */
 struct libnet_bgp4_notification_hdr
 {
-#define LIBNET_BGP4_MESSAGE_HEADER_ERROR  1
-#define LIBNET_BGP4_OPEN_MESSAGE_ERROR    2
-#define LIBNET_BGP4_UPDATE_MESSAGE_ERROR  3
-#define LIBNET_BGP4_HOLD_TIMER_EXPIRED    4
-#define LIBNET_BGP4_FINITE_STATE__ERROR   5
-#define LIBNET_BGP4_CEASE                 6
+#define LIBNET_BGP4_MESSAGE_HEADER_ERROR  (1)
+#define LIBNET_BGP4_OPEN_MESSAGE_ERROR    (2)
+#define LIBNET_BGP4_UPDATE_MESSAGE_ERROR  (3)
+#define LIBNET_BGP4_HOLD_TIMER_EXPIRED    (4)
+#define LIBNET_BGP4_FINITE_STATE__ERROR   (5)
+#define LIBNET_BGP4_CEASE                 (6)
     uint8_t err_code;
 
 /* Message Header Error subcodes */
-#define LIBNET_BGP4_CONNECTION_NOT_SYNCHRONIZED    1
-#define LIBNET_BGP4_BAD_MESSAGE_LENGTH             2
-#define LIBNET_BGP4_BAD_MESSAGE_TYPE               3
+#define LIBNET_BGP4_CONNECTION_NOT_SYNCHRONIZED    (1)
+#define LIBNET_BGP4_BAD_MESSAGE_LENGTH             (2)
+#define LIBNET_BGP4_BAD_MESSAGE_TYPE               (3)
 /* OPEN Message Error subcodes */
-#define LIBNET_BGP4_UNSUPPORTED_VERSION_NUMBER     1
-#define LIBNET_BGP4_BAD_PEER_AS                    2
-#define LIBNET_BGP4_BAD_BGP_IDENTIFIER             3
-#define LIBNET_BGP4_UNSUPPORTED_OPTIONAL_PARAMETER 4
-#define LIBNET_BGP4_AUTHENTICATION_FAILURE         5
-#define LIBNET_BGP4_UNACCEPTABLE_HOLD_TIME         6
+#define LIBNET_BGP4_UNSUPPORTED_VERSION_NUMBER     (1)
+#define LIBNET_BGP4_BAD_PEER_AS                    (2)
+#define LIBNET_BGP4_BAD_BGP_IDENTIFIER             (3)
+#define LIBNET_BGP4_UNSUPPORTED_OPTIONAL_PARAMETER (4)
+#define LIBNET_BGP4_AUTHENTICATION_FAILURE         (5)
+#define LIBNET_BGP4_UNACCEPTABLE_HOLD_TIME         (6)
 /* UPDATE Message Error subcodes */
 #define LIBNET_BGP4_MALFORMED_ATTRIBUTE_LIST
 #define LIBNET_BGP4_UNRECOGNIZED_WELL_KNOWN_ATTRIBUTE
@@ -304,7 +304,7 @@ struct libnet_bgp4_notification_hdr
  *  For checksum stuff -- IANA says 135-254 is "unassigned" as of 12.2001.
  *  Let's hope this one stays that way for a while!
  */
-#define LIBNET_PROTO_CDP    200
+#define LIBNET_PROTO_CDP    (200)
 
 /*
  *  CDP header
@@ -317,31 +317,31 @@ struct libnet_cdp_hdr
     uint8_t cdp_ttl;         /* time reciever should hold info in this packet */
     uint16_t cdp_sum;        /* checksum */
     uint16_t cdp_type;       /* type */
-#define LIBNET_CDP_DEVID    0x1 /* device id */
-#define LIBNET_CDP_ADDRESS  0x2 /* address */
-#define LIBNET_CDP_PORTID   0x3 /* port id */
-#define LIBNET_CDP_CAPABIL  0x4 /* capabilities */
-#define LIBNET_CDP_VERSION  0x5 /* version */
-#define LIBNET_CDP_PLATFORM 0x6 /* platform */
-#define LIBNET_CDP_IPPREFIX 0x7 /* ip prefix */
+#define LIBNET_CDP_DEVID    (0x1) /* device id */
+#define LIBNET_CDP_ADDRESS  (0x2) /* address */
+#define LIBNET_CDP_PORTID   (0x3) /* port id */
+#define LIBNET_CDP_CAPABIL  (0x4) /* capabilities */
+#define LIBNET_CDP_VERSION  (0x5) /* version */
+#define LIBNET_CDP_PLATFORM (0x6) /* platform */
+#define LIBNET_CDP_IPPREFIX (0x7) /* ip prefix */
     uint16_t cdp_len;        /* type + length + value */
     /* value information done dynamically */
 
 /* CDP capabilities */
-#define LIBNET_CDP_CAP_L3R  0x01/* performs level 3 routing */
-#define LIBNET_CDP_CAP_L2B  0x02/* performs level 2 transparent bridging */
-#define LIBNET_CDP_CAP_L2SRB 0x04/* performs level 2 sourceroute bridging */
-#define LIBNET_CDP_CAP_L2S  0x08/* performs level 2 switching */
-#define LIBNET_CDP_CAP_SR   0x10/* sends and recieves packets on a network */
-#define LIBNET_CDP_CAP_NOI  0x20/* does not forward IGMP on non-router ports */
-#define LIBNET_CDP_CAP_L1F  0x40/* provides level 1 functionality */
+#define LIBNET_CDP_CAP_L3R  (0x01) /* performs level 3 routing */
+#define LIBNET_CDP_CAP_L2B  (0x02) /* performs level 2 transparent bridging */
+#define LIBNET_CDP_CAP_L2SRB (0x04) /* performs level 2 sourceroute bridging */
+#define LIBNET_CDP_CAP_L2S  (0x08) /* performs level 2 switching */
+#define LIBNET_CDP_CAP_SR   (0x10) /* sends and recieves packets on a network */
+#define LIBNET_CDP_CAP_NOI  (0x20) /* does not forward IGMP on non-router ports */
+#define LIBNET_CDP_CAP_L1F  (0x40) /* provides level 1 functionality */
 };
 
 
 /*
  *  Used as an overlay for type/len/values
  */
-#define LIBNET_CDP_VALUE_H  0x04 /*< CDP value header base: 4 bytes */
+#define LIBNET_CDP_VALUE_H  (0x04) /*< CDP value header base: 4 bytes */
 struct libnet_cdp_value_hdr
 {
     uint16_t cdp_type;
@@ -357,8 +357,8 @@ struct libnet_cdp_value_hdr
 struct libnet_dhcpv4_hdr
 {
     uint8_t dhcp_opcode;     /* opcode */
-#define LIBNET_DHCP_REQUEST 0x1
-#define LIBNET_DHCP_REPLY   0x2
+#define LIBNET_DHCP_REQUEST (0x1)
+#define LIBNET_DHCP_REPLY   (0x2)
     uint8_t dhcp_htype;      /* hardware address type */
     uint8_t dhcp_hlen;       /* hardware address length */
     uint8_t dhcp_hopcount;   /* used by proxy servers */
@@ -373,91 +373,91 @@ struct libnet_dhcpv4_hdr
     char dhcp_sname[64];     /* server host name, null terminated string */
     char dhcp_file[128];     /* boot file name, null terminated string */
     uint32_t dhcp_magic;      /* BOOTP magic header */
-#define DHCP_MAGIC                  0x63825363
-#define LIBNET_BOOTP_MIN_LEN        0x12c
-#define LIBNET_DHCP_PAD             0x00
-#define LIBNET_DHCP_SUBNETMASK      0x01
-#define LIBNET_DHCP_TIMEOFFSET      0x02
-#define LIBNET_DHCP_ROUTER          0x03
-#define LIBNET_DHCP_TIMESERVER      0x04
-#define LIBNET_DHCP_NAMESERVER      0x05
-#define LIBNET_DHCP_DNS             0x06
-#define LIBNET_DHCP_LOGSERV         0x07
-#define LIBNET_DHCP_COOKIESERV      0x08
-#define LIBNET_DHCP_LPRSERV         0x09
-#define LIBNET_DHCP_IMPSERV         0x0a
-#define LIBNET_DHCP_RESSERV         0x0b
-#define LIBNET_DHCP_HOSTNAME        0x0c
-#define LIBNET_DHCP_BOOTFILESIZE    0x0d
-#define LIBNET_DHCP_DUMPFILE        0x0e
-#define LIBNET_DHCP_DOMAINNAME      0x0f
-#define LIBNET_DHCP_SWAPSERV        0x10
-#define LIBNET_DHCP_ROOTPATH        0x11
-#define LIBNET_DHCP_EXTENPATH       0x12
-#define LIBNET_DHCP_IPFORWARD       0x13
-#define LIBNET_DHCP_SRCROUTE        0x14
-#define LIBNET_DHCP_POLICYFILTER    0x15
-#define LIBNET_DHCP_MAXASMSIZE      0x16
-#define LIBNET_DHCP_IPTTL           0x17
-#define LIBNET_DHCP_MTUTIMEOUT      0x18
-#define LIBNET_DHCP_MTUTABLE        0x19
-#define LIBNET_DHCP_MTUSIZE         0x1a
-#define LIBNET_DHCP_LOCALSUBNETS    0x1b
-#define LIBNET_DHCP_BROADCASTADDR   0x1c
-#define LIBNET_DHCP_DOMASKDISCOV    0x1d
-#define LIBNET_DHCP_MASKSUPPLY      0x1e
-#define LIBNET_DHCP_DOROUTEDISC     0x1f
-#define LIBNET_DHCP_ROUTERSOLICIT   0x20
-#define LIBNET_DHCP_STATICROUTE     0x21
-#define LIBNET_DHCP_TRAILERENCAP    0x22
-#define LIBNET_DHCP_ARPTIMEOUT      0x23
-#define LIBNET_DHCP_ETHERENCAP      0x24
-#define LIBNET_DHCP_TCPTTL          0x25
-#define LIBNET_DHCP_TCPKEEPALIVE    0x26
-#define LIBNET_DHCP_TCPALIVEGARBAGE 0x27
-#define LIBNET_DHCP_NISDOMAIN       0x28
-#define LIBNET_DHCP_NISSERVERS      0x29
-#define LIBNET_DHCP_NISTIMESERV     0x2a
-#define LIBNET_DHCP_VENDSPECIFIC    0x2b
-#define LIBNET_DHCP_NBNS            0x2c
-#define LIBNET_DHCP_NBDD            0x2d
-#define LIBNET_DHCP_NBTCPIP         0x2e
-#define LIBNET_DHCP_NBTCPSCOPE      0x2f
-#define LIBNET_DHCP_XFONT           0x30
-#define LIBNET_DHCP_XDISPLAYMGR     0x31
-#define LIBNET_DHCP_DISCOVERADDR    0x32
-#define LIBNET_DHCP_LEASETIME       0x33
-#define LIBNET_DHCP_OPTIONOVERLOAD  0x34
-#define LIBNET_DHCP_MESSAGETYPE     0x35
-#define LIBNET_DHCP_SERVIDENT       0x36
-#define LIBNET_DHCP_PARAMREQUEST    0x37
-#define LIBNET_DHCP_MESSAGE         0x38
-#define LIBNET_DHCP_MAXMSGSIZE      0x39
-#define LIBNET_DHCP_RENEWTIME       0x3a
-#define LIBNET_DHCP_REBINDTIME      0x3b
-#define LIBNET_DHCP_CLASSSID        0x3c
-#define LIBNET_DHCP_CLIENTID        0x3d
-#define LIBNET_DHCP_NISPLUSDOMAIN   0x40
-#define LIBNET_DHCP_NISPLUSSERVERS  0x41
-#define LIBNET_DHCP_MOBILEIPAGENT   0x44
-#define LIBNET_DHCP_SMTPSERVER      0x45
-#define LIBNET_DHCP_POP3SERVER      0x46
-#define LIBNET_DHCP_NNTPSERVER      0x47
-#define LIBNET_DHCP_WWWSERVER       0x48
-#define LIBNET_DHCP_FINGERSERVER    0x49
-#define LIBNET_DHCP_IRCSERVER       0x4a
-#define LIBNET_DHCP_STSERVER        0x4b
-#define LIBNET_DHCP_STDASERVER      0x4c
-#define LIBNET_DHCP_END             0xff
+#define DHCP_MAGIC                  (0x63825363)
+#define LIBNET_BOOTP_MIN_LEN        (0x12c)
+#define LIBNET_DHCP_PAD             (0x00)
+#define LIBNET_DHCP_SUBNETMASK      (0x01)
+#define LIBNET_DHCP_TIMEOFFSET      (0x02)
+#define LIBNET_DHCP_ROUTER          (0x03)
+#define LIBNET_DHCP_TIMESERVER      (0x04)
+#define LIBNET_DHCP_NAMESERVER      (0x05)
+#define LIBNET_DHCP_DNS             (0x06)
+#define LIBNET_DHCP_LOGSERV         (0x07)
+#define LIBNET_DHCP_COOKIESERV      (0x08)
+#define LIBNET_DHCP_LPRSERV         (0x09)
+#define LIBNET_DHCP_IMPSERV         (0x0a)
+#define LIBNET_DHCP_RESSERV         (0x0b)
+#define LIBNET_DHCP_HOSTNAME        (0x0c)
+#define LIBNET_DHCP_BOOTFILESIZE    (0x0d)
+#define LIBNET_DHCP_DUMPFILE        (0x0e)
+#define LIBNET_DHCP_DOMAINNAME      (0x0f)
+#define LIBNET_DHCP_SWAPSERV        (0x10)
+#define LIBNET_DHCP_ROOTPATH        (0x11)
+#define LIBNET_DHCP_EXTENPATH       (0x12)
+#define LIBNET_DHCP_IPFORWARD       (0x13)
+#define LIBNET_DHCP_SRCROUTE        (0x14)
+#define LIBNET_DHCP_POLICYFILTER    (0x15)
+#define LIBNET_DHCP_MAXASMSIZE      (0x16)
+#define LIBNET_DHCP_IPTTL           (0x17)
+#define LIBNET_DHCP_MTUTIMEOUT      (0x18)
+#define LIBNET_DHCP_MTUTABLE        (0x19)
+#define LIBNET_DHCP_MTUSIZE         (0x1a)
+#define LIBNET_DHCP_LOCALSUBNETS    (0x1b)
+#define LIBNET_DHCP_BROADCASTADDR   (0x1c)
+#define LIBNET_DHCP_DOMASKDISCOV    (0x1d)
+#define LIBNET_DHCP_MASKSUPPLY      (0x1e)
+#define LIBNET_DHCP_DOROUTEDISC     (0x1f)
+#define LIBNET_DHCP_ROUTERSOLICIT   (0x20)
+#define LIBNET_DHCP_STATICROUTE     (0x21)
+#define LIBNET_DHCP_TRAILERENCAP    (0x22)
+#define LIBNET_DHCP_ARPTIMEOUT      (0x23)
+#define LIBNET_DHCP_ETHERENCAP      (0x24)
+#define LIBNET_DHCP_TCPTTL          (0x25)
+#define LIBNET_DHCP_TCPKEEPALIVE    (0x26)
+#define LIBNET_DHCP_TCPALIVEGARBAGE (0x27)
+#define LIBNET_DHCP_NISDOMAIN       (0x28)
+#define LIBNET_DHCP_NISSERVERS      (0x29)
+#define LIBNET_DHCP_NISTIMESERV     (0x2a)
+#define LIBNET_DHCP_VENDSPECIFIC    (0x2b)
+#define LIBNET_DHCP_NBNS            (0x2c)
+#define LIBNET_DHCP_NBDD            (0x2d)
+#define LIBNET_DHCP_NBTCPIP         (0x2e)
+#define LIBNET_DHCP_NBTCPSCOPE      (0x2f)
+#define LIBNET_DHCP_XFONT           (0x30)
+#define LIBNET_DHCP_XDISPLAYMGR     (0x31)
+#define LIBNET_DHCP_DISCOVERADDR    (0x32)
+#define LIBNET_DHCP_LEASETIME       (0x33)
+#define LIBNET_DHCP_OPTIONOVERLOAD  (0x34)
+#define LIBNET_DHCP_MESSAGETYPE     (0x35)
+#define LIBNET_DHCP_SERVIDENT       (0x36)
+#define LIBNET_DHCP_PARAMREQUEST    (0x37)
+#define LIBNET_DHCP_MESSAGE         (0x38)
+#define LIBNET_DHCP_MAXMSGSIZE      (0x39)
+#define LIBNET_DHCP_RENEWTIME       (0x3a)
+#define LIBNET_DHCP_REBINDTIME      (0x3b)
+#define LIBNET_DHCP_CLASSSID        (0x3c)
+#define LIBNET_DHCP_CLIENTID        (0x3d)
+#define LIBNET_DHCP_NISPLUSDOMAIN   (0x40)
+#define LIBNET_DHCP_NISPLUSSERVERS  (0x41)
+#define LIBNET_DHCP_MOBILEIPAGENT   (0x44)
+#define LIBNET_DHCP_SMTPSERVER      (0x45)
+#define LIBNET_DHCP_POP3SERVER      (0x46)
+#define LIBNET_DHCP_NNTPSERVER      (0x47)
+#define LIBNET_DHCP_WWWSERVER       (0x48)
+#define LIBNET_DHCP_FINGERSERVER    (0x49)
+#define LIBNET_DHCP_IRCSERVER       (0x4a)
+#define LIBNET_DHCP_STSERVER        (0x4b)
+#define LIBNET_DHCP_STDASERVER      (0x4c)
+#define LIBNET_DHCP_END             (0xff)
 
-#define LIBNET_DHCP_MSGDISCOVER     0x01
-#define LIBNET_DHCP_MSGOFFER        0x02
-#define LIBNET_DHCP_MSGREQUEST      0x03
-#define LIBNET_DHCP_MSGDECLINE      0x04
-#define LIBNET_DHCP_MSGACK          0x05
-#define LIBNET_DHCP_MSGNACK         0x06
-#define LIBNET_DHCP_MSGRELEASE      0x07
-#define LIBNET_DHCP_MSGINFORM       0x08
+#define LIBNET_DHCP_MSGDISCOVER     (0x01)
+#define LIBNET_DHCP_MSGOFFER        (0x02)
+#define LIBNET_DHCP_MSGREQUEST      (0x03)
+#define LIBNET_DHCP_MSGDECLINE      (0x04)
+#define LIBNET_DHCP_MSGACK          (0x05)
+#define LIBNET_DHCP_MSGNACK         (0x06)
+#define LIBNET_DHCP_MSGRELEASE      (0x07)
+#define LIBNET_DHCP_MSGINFORM       (0x08)
 };
 
 
@@ -502,29 +502,29 @@ struct libnet_ethernet_hdr
 };
 
 #ifndef ETHERTYPE_PUP
-#define ETHERTYPE_PUP           0x0200  /* PUP protocol */
+#define ETHERTYPE_PUP           (0x0200)  /* PUP protocol */
 #endif
 #ifndef ETHERTYPE_IP
-#define ETHERTYPE_IP            0x0800  /* IP protocol */
+#define ETHERTYPE_IP            (0x0800)  /* IP protocol */
 #endif
-#define ETHERTYPE_IPV6          0x86dd  /* IPv6 protocol */
+#define ETHERTYPE_IPV6          (0x86dd)  /* IPv6 protocol */
 #ifndef ETHERTYPE_ARP
-#define ETHERTYPE_ARP           0x0806  /* addr. resolution protocol */
+#define ETHERTYPE_ARP           (0x0806)  /* addr. resolution protocol */
 #endif
 #ifndef ETHERTYPE_REVARP
-#define ETHERTYPE_REVARP        0x8035  /* reverse addr. resolution protocol */
+#define ETHERTYPE_REVARP        (0x8035)  /* reverse addr. resolution protocol */
 #endif
 #ifndef ETHERTYPE_VLAN
-#define ETHERTYPE_VLAN          0x8100  /* IEEE 802.1Q VLAN tagging */
+#define ETHERTYPE_VLAN          (0x8100)  /* IEEE 802.1Q VLAN tagging */
 #endif
 #ifndef ETHERTYPE_EAP
-#define ETHERTYPE_EAP           0x888e  /* IEEE 802.1X EAP authentication */
+#define ETHERTYPE_EAP           (0x888e)  /* IEEE 802.1X EAP authentication */
 #endif
 #ifndef ETHERTYPE_MPLS
-#define ETHERTYPE_MPLS          0x8847  /* MPLS */
+#define ETHERTYPE_MPLS          (0x8847)  /* MPLS */
 #endif
 #ifndef ETHERTYPE_LOOPBACK
-#define ETHERTYPE_LOOPBACK      0x9000  /* used to test interfaces */
+#define ETHERTYPE_LOOPBACK      (0x9000)  /* used to test interfaces */
 #endif
 
 struct libnet_ether_addr
@@ -544,8 +544,8 @@ struct libnet_ether_addr
 struct libnet_fddi_hdr
 {
     uint8_t  fddi_frame_control;                      /* Class/Format/Priority */
-#define LIBNET_FDDI_LLC_FRAME  0x10
-#define LIBNET_FDDI_48BIT_ADDR 0x40
+#define LIBNET_FDDI_LLC_FRAME  (0x10)
+#define LIBNET_FDDI_48BIT_ADDR (0x40)
 #define LIBNET_FDDI_FC_REQD    LIBNET_FDDI_LLC_FRAME | LIBNET_FDDI_48BIT_ADDR 
     uint8_t  fddi_dhost[FDDI_ADDR_LEN];               /* destination fddi address */
     uint8_t  fddi_shost[FDDI_ADDR_LEN];               /* source fddi address */
@@ -555,9 +555,9 @@ struct libnet_fddi_hdr
     uint8_t  fddi_llc_org_code[LIBNET_ORG_CODE_SIZE]; /* Organization Code 3-bytes */
     uint8_t  fddi_type;                               /* Protocol Type */
     uint8_t  fddi_type1;                              /* see note above. */
-#define FDDI_TYPE_IP            0x0800  /* IP protocol */
-#define FDDI_TYPE_ARP           0x0806  /* addr. resolution protocol */
-#define FDDI_TYPE_REVARP        0x8035  /* reverse addr. resolution protocol */
+#define FDDI_TYPE_IP            (0x0800)  /* IP protocol */
+#define FDDI_TYPE_ARP           (0x0806)  /* addr. resolution protocol */
+#define FDDI_TYPE_REVARP        (0x8035)  /* reverse addr. resolution protocol */
 };
 
 
@@ -575,42 +575,42 @@ struct libnet_fddi_addr
 struct libnet_gre_hdr
 {
     uint16_t flags_ver;
-#define GRE_CSUM	                        0x8000
-#define GRE_ROUTING	                        0x4000
-#define GRE_KEY		                        0x2000
-#define GRE_SEQ		                        0x1000
-#define GRE_STRICT	                        0x0800
-#define GRE_REC		                        0x0700
-#define GRE_ACK		                        0x0080
+#define GRE_CSUM	                        (0x8000)
+#define GRE_ROUTING	                        (0x4000)
+#define GRE_KEY		                        (0x2000)
+#define GRE_SEQ		                        (0x1000)
+#define GRE_STRICT	                        (0x0800)
+#define GRE_REC		                        (0x0700)
+#define GRE_ACK		                        (0x0080)
 
-#define GRE_FLAGS_MASK	                        0x00F8
-#define GRE_VERSION_MASK                        0x0007
+#define GRE_FLAGS_MASK	                        (0x00F8)
+#define GRE_VERSION_MASK                        (0x0007)
 
-#define GRE_VERSION_0                           0x0000
-#define GRE_VERSION_1                           0x0001
+#define GRE_VERSION_0                           (0x0000)
+#define GRE_VERSION_1                           (0x0001)
 
     uint16_t type;
-#define GRE_SNA                                 0x0004
-#define GRE_OSI_NETWORK_LAYER                   0x00FE
-#define GRE_PUP                                 0x0200
-#define GRE_XNS                                 0x0600
-#define GRE_IP                                  0x0800
-#define GRE_CHAOS                               0x0804
-#define GRE_RFC_826_ARP                         0x0806
-#define GRE_FRAME_RELAY_ARP                     0x0808
-#define GRE_VINES                               0x0BAD
-#define GRE_VINES_ECHO                          0x0BAE
-#define GRE_VINES_LOOPBACK                      0x0BAF
-#define GRE_DECNET                              0x6003
-#define GRE_TRANSPARENT_ETHERNET_BRIDGING       0x6558
-#define GRE_RAW_FRAME_RELAY                     0x6559
-#define GRE_APOLLO_DOMAIN                       0x8019
-#define GRE_ETHERTALK                           0x809B
-#define GRE_NOVELL_IPX                          0x8137
-#define GRE_RFC_1144_TCP_IP_COMPRESSION         0x876B
-#define GRE_IP_AUTONOMOUS_SYSTEMS               0x876C
-#define GRE_SECURE_DATA                         0x876D
-#define GRE_PPP                                 0x880b /* taken from RFC 2637 */
+#define GRE_SNA                                 (0x0004)
+#define GRE_OSI_NETWORK_LAYER                   (0x00FE)
+#define GRE_PUP                                 (0x0200)
+#define GRE_XNS                                 (0x0600)
+#define GRE_IP                                  (0x0800)
+#define GRE_CHAOS                               (0x0804)
+#define GRE_RFC_826_ARP                         (0x0806)
+#define GRE_FRAME_RELAY_ARP                     (0x0808)
+#define GRE_VINES                               (0x0BAD)
+#define GRE_VINES_ECHO                          (0x0BAE)
+#define GRE_VINES_LOOPBACK                      (0x0BAF)
+#define GRE_DECNET                              (0x6003)
+#define GRE_TRANSPARENT_ETHERNET_BRIDGING       (0x6558)
+#define GRE_RAW_FRAME_RELAY                     (0x6559)
+#define GRE_APOLLO_DOMAIN                       (0x8019)
+#define GRE_ETHERTALK                           (0x809B)
+#define GRE_NOVELL_IPX                          (0x8137)
+#define GRE_RFC_1144_TCP_IP_COMPRESSION         (0x876B)
+#define GRE_IP_AUTONOMOUS_SYSTEMS               (0x876C)
+#define GRE_SECURE_DATA                         (0x876D)
+#define GRE_PPP                                 (0x880b) /* taken from RFC 2637 */
 
     union {
 	struct {
@@ -641,7 +641,7 @@ struct libnet_gre_hdr
 
 
 #ifndef IPPROTO_GRE
-#define IPPROTO_GRE 47
+#define IPPROTO_GRE (47)
 #endif
 
 /*
@@ -675,31 +675,31 @@ struct libnet_ipv4_hdr
 #endif
     uint8_t ip_tos;       /* type of service */
 #ifndef IPTOS_LOWDELAY
-#define IPTOS_LOWDELAY      0x10
+#define IPTOS_LOWDELAY      (0x10)
 #endif
 #ifndef IPTOS_THROUGHPUT
-#define IPTOS_THROUGHPUT    0x08
+#define IPTOS_THROUGHPUT    (0x08)
 #endif
 #ifndef IPTOS_RELIABILITY
-#define IPTOS_RELIABILITY   0x04
+#define IPTOS_RELIABILITY   (0x04)
 #endif
 #ifndef IPTOS_LOWCOST
-#define IPTOS_LOWCOST       0x02
+#define IPTOS_LOWCOST       (0x02)
 #endif
     uint16_t ip_len;         /* total length */
     uint16_t ip_id;          /* identification */
     uint16_t ip_off;
 #ifndef IP_RF
-#define IP_RF 0x8000        /* reserved fragment flag */
+#define IP_RF (0x8000)        /* reserved fragment flag */
 #endif
 #ifndef IP_DF
-#define IP_DF 0x4000        /* dont fragment flag */
+#define IP_DF (0x4000)        /* dont fragment flag */
 #endif
 #ifndef IP_MF
-#define IP_MF 0x2000        /* more fragments flag */
+#define IP_MF (0x2000)        /* more fragments flag */
 #endif 
 #ifndef IP_OFFMASK
-#define IP_OFFMASK 0x1fff   /* mask for fragmenting bits */
+#define IP_OFFMASK (0x1fff)   /* mask for fragmenting bits */
 #endif
     uint8_t ip_ttl;          /* time to live */
     uint8_t ip_p;            /* protocol */
@@ -711,28 +711,28 @@ struct libnet_ipv4_hdr
  *  IP options
  */
 #ifndef IPOPT_EOL
-#define IPOPT_EOL       0   /* end of option list */
+#define IPOPT_EOL       (0)   /* end of option list */
 #endif
 #ifndef IPOPT_NOP
-#define IPOPT_NOP       1   /* no operation */
+#define IPOPT_NOP       (1)   /* no operation */
 #endif   
 #ifndef IPOPT_RR
-#define IPOPT_RR        7   /* record packet route */
+#define IPOPT_RR        (7)   /* record packet route */
 #endif
 #ifndef IPOPT_TS
-#define IPOPT_TS        68  /* timestamp */
+#define IPOPT_TS        (68)  /* timestamp */
 #endif
 #ifndef IPOPT_SECURITY
-#define IPOPT_SECURITY  130 /* provide s,c,h,tcc */   
+#define IPOPT_SECURITY  (130) /* provide s,c,h,tcc */
 #endif
 #ifndef IPOPT_LSRR
-#define IPOPT_LSRR      131 /* loose source route */
+#define IPOPT_LSRR      (131) /* loose source route */
 #endif
 #ifndef IPOPT_SATID
-#define IPOPT_SATID     136 /* satnet id */
+#define IPOPT_SATID     (136) /* satnet id */
 #endif
 #ifndef IPOPT_SSRR
-#define IPOPT_SSRR      137 /* strict source route */
+#define IPOPT_SSRR      (137) /* strict source route */
 #endif
 
 /*
@@ -769,7 +769,7 @@ struct libnet_ipv6_hdr
  *  Internet Protocol, version 6
  *  Static header size: 8 bytes
  */
-#define LIBNET_IPV6_NH_FRAGMENT 44
+#define LIBNET_IPV6_NH_FRAGMENT (44)
 struct libnet_ipv6_frag_hdr
 {
     uint8_t ip_nh;          /* next header */
@@ -783,7 +783,7 @@ struct libnet_ipv6_frag_hdr
  *  Internet Protocol, version 6
  *  Base header size: 4 bytes
  */
-#define LIBNET_IPV6_NH_ROUTING  43
+#define LIBNET_IPV6_NH_ROUTING  (43)
 struct libnet_ipv6_routing_hdr
 {
     uint8_t ip_nh;          /* next header */
@@ -798,7 +798,7 @@ struct libnet_ipv6_routing_hdr
  *  Internet Protocol, version 6
  *  Base header size: 2 bytes
  */
-#define LIBNET_IPV6_NH_DESTOPTS 60
+#define LIBNET_IPV6_NH_DESTOPTS (60)
 struct libnet_ipv6_destopts_hdr
 {
     uint8_t ip_nh;          /* next header */
@@ -811,7 +811,7 @@ struct libnet_ipv6_destopts_hdr
  *  Internet Protocol, version 6
  *  Base header size: 2 bytes
  */
-#define LIBNET_IPV6_NH_HBH      0
+#define LIBNET_IPV6_NH_HBH      (0)
 struct libnet_ipv6_hbhopts_hdr
 {
     uint8_t ip_nh;          /* next header */
@@ -825,59 +825,59 @@ struct libnet_ipv6_hbhopts_hdr
  *  Base header size: 4 bytes
  */
 #ifndef IPPROTO_ICMPV6
-#define IPPROTO_ICMPV6  58
+#define IPPROTO_ICMPV6  (58)
 #endif
 struct libnet_icmpv6_hdr
 {
     uint8_t icmp_type;       /* ICMP type */
 /* Don't define if <netinet/icmp6.h> has defined them. */
 #ifndef ICMP6_ECHO_REQUEST
-#define ICMP6_ECHO_REQUEST           128
+#define ICMP6_ECHO_REQUEST           (128)
 #endif
 #ifndef ICMP6_ECHO_REPLY
-#define ICMP6_ECHO_REPLY             129
+#define ICMP6_ECHO_REPLY             (129)
 #endif
 #ifndef ICMP6_DST_UNREACH
-#define ICMP6_DST_UNREACH            1
+#define ICMP6_DST_UNREACH            (1)
 #endif
 #ifndef ICMP6_PACKET_TOO_BIG
-#define ICMP6_PACKET_TOO_BIG         2
+#define ICMP6_PACKET_TOO_BIG         (2)
 #endif
 #ifndef ICMP6_TIME_EXCEEDED
-#define ICMP6_TIME_EXCEEDED          3
+#define ICMP6_TIME_EXCEEDED          (3)
 #endif
 #ifndef ICMP6_PARAM_PROB
-#define ICMP6_PARAM_PROB             4
+#define ICMP6_PARAM_PROB             (4)
 #endif
 
 #ifndef ND_ROUTER_SOLICIT
-#define ND_ROUTER_SOLICIT           133
+#define ND_ROUTER_SOLICIT           (133)
 #endif
 #ifndef ND_ROUTER_ADVERT
-#define ND_ROUTER_ADVERT            134
+#define ND_ROUTER_ADVERT            (134)
 #endif
 #ifndef ND_NEIGHBOR_SOLICIT
-#define ND_NEIGHBOR_SOLICIT         135
+#define ND_NEIGHBOR_SOLICIT         (135)
 #endif
 #ifndef ND_NEIGHBOR_ADVERT
-#define ND_NEIGHBOR_ADVERT          136
+#define ND_NEIGHBOR_ADVERT          (136)
 #endif
 
     uint8_t icmp_code;       /* ICMP code */
 #ifndef ICMP6_DST_UNREACH_NOROUTE
-#define ICMP6_DST_UNREACH_NOROUTE     0
+#define ICMP6_DST_UNREACH_NOROUTE     (0)
 #endif
 #ifndef ICMP6_DST_UNREACH_ADMIN
-#define ICMP6_DST_UNREACH_ADMIN       1
+#define ICMP6_DST_UNREACH_ADMIN       (1)
 #endif
 #ifndef ICMP6_DST_UNREACH_BEYONDSCOPE
-#define ICMP6_DST_UNREACH_BEYONDSCOPE 2
+#define ICMP6_DST_UNREACH_BEYONDSCOPE (2)
 #endif
 #ifndef ICMP6_DST_UNREACH_ADDR
-#define ICMP6_DST_UNREACH_ADDR        3
+#define ICMP6_DST_UNREACH_ADDR        (3)
 #endif
 #ifndef ICMP6_DST_UNREACH_NOPORT
-#define ICMP6_DST_UNREACH_NOPORT      4
+#define ICMP6_DST_UNREACH_NOPORT      (4)
 #endif
     uint16_t icmp_sum;       /* ICMP Checksum */
 
@@ -888,20 +888,20 @@ struct libnet_icmpv6_hdr
 
     /* Non-standard names, for libnet backwards compatibility, don't use. */
     /* ipproto: */
-#define IPPROTO_ICMP6    58
+#define IPPROTO_ICMP6    (58)
     /* types: */
-#define ICMP6_ECHO          128
-#define ICMP6_ECHOREPLY     129
-#define ICMP6_UNREACH       1
-#define ICMP6_PKTTOOBIG     2
-#define ICMP6_TIMXCEED      3
-#define ICMP6_PARAMPROB     4
+#define ICMP6_ECHO          (128)
+#define ICMP6_ECHOREPLY     (129)
+#define ICMP6_UNREACH       (1)
+#define ICMP6_PKTTOOBIG     (2)
+#define ICMP6_TIMXCEED      (3)
+#define ICMP6_PARAMPROB     (4)
     /* codes: */
-#define ICMP6_NOROUTE                  0
-#define ICMP6_ADM_PROHIBITED           1
-#define ICMP6_NOT_NEIGHBOUR            2
-#define ICMP6_ADDR_UNREACH             3
-#define ICMP6_PORT_UNREACH             4
+#define ICMP6_NOROUTE                  (0)
+#define ICMP6_ADM_PROHIBITED           (1)
+#define ICMP6_NOT_NEIGHBOUR            (2)
+#define ICMP6_ADDR_UNREACH             (3)
+#define ICMP6_PORT_UNREACH             (4)
 };
 
 /* All of this stuff follows base ICMPv6 header */
@@ -923,10 +923,10 @@ struct libnet_icmpv6_ndp_nsol {
 struct libnet_icmpv6_ndp_nadv {
     uint32_t flags;
 #ifndef ND_NA_FLAG_ROUTER
-#define ND_NA_FLAG_ROUTER        0x80000000
+#define ND_NA_FLAG_ROUTER        (0x80000000)
 #endif
 #ifndef ND_NA_FLAG_SOLICITED
-#define ND_NA_FLAG_SOLICITED     0x40000000
+#define ND_NA_FLAG_SOLICITED     (0x40000000)
 #endif
 #ifndef ND_NA_FLAG_OVERRIDE
 #define ND_NA_FLAG_OVERRIDE      0x20000000
@@ -937,25 +937,25 @@ struct libnet_icmpv6_ndp_nadv {
 struct libnet_icmpv6_ndp_opt {
     uint8_t type;
 #ifndef ND_OPT_SOURCE_LINKADDR
-#define ND_OPT_SOURCE_LINKADDR		1
+#define ND_OPT_SOURCE_LINKADDR		(1)
 #endif
 #ifndef ND_OPT_TARGET_LINKADDR
-#define ND_OPT_TARGET_LINKADDR		2
+#define ND_OPT_TARGET_LINKADDR		(2)
 #endif
 #ifndef ND_OPT_PREFIX_INFORMATION
-#define ND_OPT_PREFIX_INFORMATION	3
+#define ND_OPT_PREFIX_INFORMATION	(3)
 #endif
 #ifndef ND_OPT_REDIRECTED_HEADER
-#define ND_OPT_REDIRECTED_HEADER	4
+#define ND_OPT_REDIRECTED_HEADER	(4)
 #endif
 #ifndef ND_OPT_MTU
-#define ND_OPT_MTU			5
+#define ND_OPT_MTU			(5)
 #endif
 #ifndef ND_OPT_RTR_ADV_INTERVAL
-#define ND_OPT_RTR_ADV_INTERVAL		7
+#define ND_OPT_RTR_ADV_INTERVAL		(7)
 #endif
 #ifndef ND_OPT_HOME_AGENT_INFO
-#define ND_OPT_HOME_AGENT_INFO		8
+#define ND_OPT_HOME_AGENT_INFO		(8)
 #endif
     uint8_t len;
 };
@@ -970,119 +970,119 @@ struct libnet_icmpv4_hdr
 {
     uint8_t icmp_type;       /* ICMP type */
 #ifndef     ICMP_ECHOREPLY
-#define     ICMP_ECHOREPLY                  0
+#define     ICMP_ECHOREPLY                  (0)
 #endif
 #ifndef     ICMP_UNREACH
-#define     ICMP_UNREACH                    3
+#define     ICMP_UNREACH                    (3)
 #endif
 #ifndef     ICMP_SOURCEQUENCH
-#define     ICMP_SOURCEQUENCH               4
+#define     ICMP_SOURCEQUENCH               (4)
 #endif
 #ifndef     ICMP_REDIRECT
-#define     ICMP_REDIRECT                   5
+#define     ICMP_REDIRECT                   (5)
 #endif
 #ifndef     ICMP_ECHO
-#define     ICMP_ECHO                       8
+#define     ICMP_ECHO                       (8)
 #endif
 #ifndef     ICMP_ROUTERADVERT
-#define     ICMP_ROUTERADVERT               9
+#define     ICMP_ROUTERADVERT               (9)
 #endif
 #ifndef     ICMP_ROUTERSOLICIT
-#define     ICMP_ROUTERSOLICIT              10
+#define     ICMP_ROUTERSOLICIT              (10)
 #endif
 #ifndef     ICMP_TIMXCEED
-#define     ICMP_TIMXCEED                   11
+#define     ICMP_TIMXCEED                   (11)
 #endif
 #ifndef     ICMP_PARAMPROB
-#define     ICMP_PARAMPROB                  12
+#define     ICMP_PARAMPROB                  (12)
 #endif
 #ifndef     ICMP_TSTAMP
-#define     ICMP_TSTAMP                     13
+#define     ICMP_TSTAMP                     (13)
 #endif
 #ifndef     ICMP_TSTAMPREPLY
-#define     ICMP_TSTAMPREPLY                14
+#define     ICMP_TSTAMPREPLY                (14)
 #endif
 #ifndef     ICMP_IREQ
-#define     ICMP_IREQ                       15
+#define     ICMP_IREQ                       (15)
 #endif
 #ifndef     ICMP_IREQREPLY
-#define     ICMP_IREQREPLY                  16
+#define     ICMP_IREQREPLY                  (16)
 #endif
 #ifndef     ICMP_MASKREQ
-#define     ICMP_MASKREQ                    17
+#define     ICMP_MASKREQ                    (17)
 #endif
 #ifndef     ICMP_MASKREPLY
-#define     ICMP_MASKREPLY                  18
+#define     ICMP_MASKREPLY                  (18)
 #endif
     uint8_t icmp_code;       /* ICMP code */
 #ifndef     ICMP_UNREACH_NET
-#define     ICMP_UNREACH_NET                0
+#define     ICMP_UNREACH_NET                (0)
 #endif
 #ifndef     ICMP_UNREACH_HOST
-#define     ICMP_UNREACH_HOST               1
+#define     ICMP_UNREACH_HOST               (1)
 #endif
 #ifndef     ICMP_UNREACH_PROTOCOL
-#define     ICMP_UNREACH_PROTOCOL           2
+#define     ICMP_UNREACH_PROTOCOL           (2)
 #endif
 #ifndef     ICMP_UNREACH_PORT
-#define     ICMP_UNREACH_PORT               3
+#define     ICMP_UNREACH_PORT               (3)
 #endif
 #ifndef     ICMP_UNREACH_NEEDFRAG
-#define     ICMP_UNREACH_NEEDFRAG           4
+#define     ICMP_UNREACH_NEEDFRAG           (4)
 #endif
 #ifndef     ICMP_UNREACH_SRCFAIL
-#define     ICMP_UNREACH_SRCFAIL            5
+#define     ICMP_UNREACH_SRCFAIL            (5)
 #endif
 #ifndef     ICMP_UNREACH_NET_UNKNOWN
-#define     ICMP_UNREACH_NET_UNKNOWN        6
+#define     ICMP_UNREACH_NET_UNKNOWN        (6)
 #endif
 #ifndef     ICMP_UNREACH_HOST_UNKNOWN
-#define     ICMP_UNREACH_HOST_UNKNOWN       7
+#define     ICMP_UNREACH_HOST_UNKNOWN       (7)
 #endif
 #ifndef     ICMP_UNREACH_ISOLATED
-#define     ICMP_UNREACH_ISOLATED           8
+#define     ICMP_UNREACH_ISOLATED           (8)
 #endif
 #ifndef     ICMP_UNREACH_NET_PROHIB
-#define     ICMP_UNREACH_NET_PROHIB         9
+#define     ICMP_UNREACH_NET_PROHIB         (9)
 #endif
 #ifndef     ICMP_UNREACH_HOST_PROHIB
-#define     ICMP_UNREACH_HOST_PROHIB        10
+#define     ICMP_UNREACH_HOST_PROHIB        (10)
 #endif
 #ifndef     ICMP_UNREACH_TOSNET
-#define     ICMP_UNREACH_TOSNET             11
+#define     ICMP_UNREACH_TOSNET             (11)
 #endif
 #ifndef     ICMP_UNREACH_TOSHOST
-#define     ICMP_UNREACH_TOSHOST            12
+#define     ICMP_UNREACH_TOSHOST            (12)
 #endif
 #ifndef     ICMP_UNREACH_FILTER_PROHIB
-#define     ICMP_UNREACH_FILTER_PROHIB      13
+#define     ICMP_UNREACH_FILTER_PROHIB      (13)
 #endif
 #ifndef     ICMP_UNREACH_HOST_PRECEDENCE
-#define     ICMP_UNREACH_HOST_PRECEDENCE    14
+#define     ICMP_UNREACH_HOST_PRECEDENCE    (14)
 #endif
 #ifndef     ICMP_UNREACH_PRECEDENCE_CUTOFF
-#define     ICMP_UNREACH_PRECEDENCE_CUTOFF  15
+#define     ICMP_UNREACH_PRECEDENCE_CUTOFF  (15)
 #endif
 #ifndef     ICMP_REDIRECT_NET
-#define     ICMP_REDIRECT_NET               0
+#define     ICMP_REDIRECT_NET               (0)
 #endif
 #ifndef     ICMP_REDIRECT_HOST
-#define     ICMP_REDIRECT_HOST              1
+#define     ICMP_REDIRECT_HOST              (1)
 #endif
 #ifndef     ICMP_REDIRECT_TOSNET
-#define     ICMP_REDIRECT_TOSNET            2
+#define     ICMP_REDIRECT_TOSNET            (2)
 #endif
 #ifndef     ICMP_REDIRECT_TOSHOST
-#define     ICMP_REDIRECT_TOSHOST           3
+#define     ICMP_REDIRECT_TOSHOST           (3)
 #endif
 #ifndef     ICMP_TIMXCEED_INTRANS
-#define     ICMP_TIMXCEED_INTRANS           0
+#define     ICMP_TIMXCEED_INTRANS           (0)
 #endif
 #ifndef     ICMP_TIMXCEED_REASS
-#define     ICMP_TIMXCEED_REASS             1
+#define     ICMP_TIMXCEED_REASS             (1)
 #endif
 #ifndef     ICMP_PARAMPROB_OPTABSENT
-#define     ICMP_PARAMPROB_OPTABSENT        1
+#define     ICMP_PARAMPROB_OPTABSENT        (1)
 #endif
 
     uint16_t icmp_sum;   /* ICMP Checksum */
@@ -1152,16 +1152,16 @@ struct libnet_igmp_hdr
 {
     uint8_t igmp_type;       /* IGMP type */
 #ifndef IGMP_MEMBERSHIP_QUERY
-#define IGMP_MEMBERSHIP_QUERY           0x11    /* membership query */
+#define IGMP_MEMBERSHIP_QUERY           (0x11)    /* membership query */
 #endif
 #ifndef IGMP_V1_MEMBERSHIP_REPORT
-#define IGMP_V1_MEMBERSHIP_REPORT       0x12    /* Ver. 1 membership report */
+#define IGMP_V1_MEMBERSHIP_REPORT       (0x12)    /* Ver. 1 membership report */
 #endif
 #ifndef IGMP_V2_MEMBERSHIP_REPORT
-#define IGMP_V2_MEMBERSHIP_REPORT       0x16    /* Ver. 2 membership report */
+#define IGMP_V2_MEMBERSHIP_REPORT       (0x16)    /* Ver. 2 membership report */
 #endif
 #ifndef IGMP_LEAVE_GROUP
-#define IGMP_LEAVE_GROUP                0x17    /* Leave-group message */
+#define IGMP_LEAVE_GROUP                (0x17)    /* Leave-group message */
 #endif
     uint8_t igmp_code;       /* IGMP reserved field (0), mistakenly called 'code' in early libnet versions */
     uint16_t igmp_sum;       /* IGMP checksum */
@@ -1194,7 +1194,7 @@ struct libnet_esp_ftr
 };
  
 #ifndef IPPROTO_AH
-#define IPPROTO_AH 51       /* not everyone's got this */
+#define IPPROTO_AH (51)       /* not everyone's got this */
 #endif
 struct libnet_ah_hdr
 {
@@ -1211,7 +1211,7 @@ struct libnet_ah_hdr
  *  For checksum stuff -- IANA says 135-254 is "unassigned" as of 12.2001.
  *  Let's hope this one stays that way for a while!
  */
-#define LIBNET_PROTO_ISL    201
+#define LIBNET_PROTO_ISL    (201)
 /*
  *  ISL header
  *  Cisco Inter-Switch Link
@@ -1238,20 +1238,20 @@ struct libnet_isl_hdr
 };
 
 #ifndef IPPROTO_OSPF
-#define IPPROTO_OSPF    89  /* not everyone's got this */
+#define IPPROTO_OSPF    (89)  /* not everyone's got this */
 #endif
-#define IPPROTO_OSPF_LSA    890     /* made this up.  Hope it's unused */
-#define LIBNET_MODX         4102    /* used in LSA checksum */
+#define IPPROTO_OSPF_LSA    (890)     /* made this up.  Hope it's unused */
+#define LIBNET_MODX         (4102)    /* used in LSA checksum */
 
 /*
  *  Options used in multiple OSPF packets
  *  More info can be found in section A.2 of RFC 2328.
  */
-#define LIBNET_OPT_EBIT  0x02 /* describes the way AS-external-LSAs are flooded */
-#define LIBNET_OPT_MCBIT 0x04 /* whether or not IP multicast dgrams are fwdd */
-#define LIBNET_OPT_NPBIT 0x08 /* describes handling of type-7 LSAs */
-#define LIBNET_OPT_EABIT 0x10 /* rtr's willingness to send/recv EA-LSAs */
-#define LIBNET_OPT_DCBIT 0x20 /* describes handling of demand circuits */
+#define LIBNET_OPT_EBIT  (0x02) /* describes the way AS-external-LSAs are flooded */
+#define LIBNET_OPT_MCBIT (0x04) /* whether or not IP multicast dgrams are fwdd */
+#define LIBNET_OPT_NPBIT (0x08) /* describes handling of type-7 LSAs */
+#define LIBNET_OPT_EABIT (0x10) /* rtr's willingness to send/recv EA-LSAs */
+#define LIBNET_OPT_DCBIT (0x20) /* describes handling of demand circuits */
 
 
 /*
@@ -1262,8 +1262,8 @@ struct libnet_isl_hdr
 struct libnet_mpls_hdr
 {
     uint32_t mpls_les;          /* 20 bits label, 3 bits exp, 1 bit bos, ttl */
-#define LIBNET_MPLS_BOS_ON    1
-#define LIBNET_MPLS_BOS_OFF   0
+#define LIBNET_MPLS_BOS_ON    (1)
+#define LIBNET_MPLS_BOS_OFF   (0)
 };
 
 /*
@@ -1287,26 +1287,26 @@ struct libnet_ntp_hdr_s_fp  /* int16_t floating point (32-bit) */
 struct libnet_ntp_hdr
 {
     uint8_t ntp_li_vn_mode;              /* leap indicator, version, mode */
-#define LIBNET_NTP_LI_NW    0x0         /* no warning */
-#define LIBNET_NTP_LI_AS    0x1         /* last minute has 61 seconds */
-#define LIBNET_NTP_LI_DS    0x2         /* last minute has 59 seconds */
-#define LIBNET_NTP_LI_AC    0x3         /* alarm condition */
+#define LIBNET_NTP_LI_NW    (0x0)         /* no warning */
+#define LIBNET_NTP_LI_AS    (0x1)         /* last minute has 61 seconds */
+#define LIBNET_NTP_LI_DS    (0x2)         /* last minute has 59 seconds */
+#define LIBNET_NTP_LI_AC    (0x3)         /* alarm condition */
 
-#define LIBNET_NTP_VN_2     0x2         /* version 2 */
-#define LIBNET_NTP_VN_3     0x3         /* version 3 */
-#define LIBNET_NTP_VN_4     0x4         /* version 4 */
+#define LIBNET_NTP_VN_2     (0x2)         /* version 2 */
+#define LIBNET_NTP_VN_3     (0x3)         /* version 3 */
+#define LIBNET_NTP_VN_4     (0x4)         /* version 4 */
 
-#define LIBNET_NTP_MODE_R   0x0         /* reserved */
-#define LIBNET_NTP_MODE_A   0x1         /* symmetric active */
-#define LIBNET_NTP_MODE_P   0x2         /* symmetric passive */
-#define LIBNET_NTP_MODE_C   0x3         /* client */
-#define LIBNET_NTP_MODE_S   0x4         /* server */
-#define LIBNET_NTP_MODE_B   0x5         /* broadcast */
-#define LIBNET_NTP_MODE_RC  0x6         /* reserved for NTP control message */
-#define LIBNET_NTP_MODE_RP  0x7         /* reserved for private use */
+#define LIBNET_NTP_MODE_R   (0x0)         /* reserved */
+#define LIBNET_NTP_MODE_A   (0x1)         /* symmetric active */
+#define LIBNET_NTP_MODE_P   (0x2)         /* symmetric passive */
+#define LIBNET_NTP_MODE_C   (0x3)         /* client */
+#define LIBNET_NTP_MODE_S   (0x4)         /* server */
+#define LIBNET_NTP_MODE_B   (0x5)         /* broadcast */
+#define LIBNET_NTP_MODE_RC  (0x6)         /* reserved for NTP control message */
+#define LIBNET_NTP_MODE_RP  (0x7)         /* reserved for private use */
     uint8_t ntp_stratum;                 /* stratum */
-#define LIBNET_NTP_STRATUM_UNAVAIL  0x0 /* unspecified or unavailable */
-#define LIBNET_NTP_STRATUM_PRIMARY  0x1 /* primary reference (radio clock) */
+#define LIBNET_NTP_STRATUM_UNAVAIL  (0x0) /* unspecified or unavailable */
+#define LIBNET_NTP_STRATUM_PRIMARY  (0x1) /* primary reference (radio clock) */
                                         /* 2 - 15 is secondary */
                                         /* 16 - 255 is reserved */
     uint8_t ntp_poll;                    /* poll interval (should be 4 - 12) */
@@ -1314,22 +1314,22 @@ struct libnet_ntp_hdr
     struct libnet_ntp_hdr_s_fp ntp_delay;       /* roundtrip delay */
     struct libnet_ntp_hdr_s_fp ntp_dispersion;  /* nominal error */
     uint32_t ntp_reference_id;                /* reference source id */
-#define LIBNET_NTP_REF_LOCAL    0x4c4f434c  /* uncalibrated local clock */
-#define LIBNET_NTP_REF_PPS      0x50505300  /* atomic / pulse-per-second clock */
-#define LIBNET_NTP_REF_ACTS     0x41435453  /* NIST dialup modem */
-#define LIBNET_NTP_REF_USNO     0x55534e4f  /* USNO modem service */
-#define LIBNET_NTP_REF_PTB      0x50544200  /* PTB (German) modem service */ 
-#define LIBNET_NTP_REF_TDF      0x54444600  /* Allouis (French) radio */
-#define LIBNET_NTP_REF_DCF      0x44434600  /* Mainflingen (German) radio */
-#define LIBNET_NTP_REF_MSF      0x4d534600  /* Rugby (UK) radio */
-#define LIBNET_NTP_REF_WWV      0x57575600  /* Ft Collins (US) radio */
-#define LIBNET_NTP_REF_WWVB     0x57575642  /* Boulder (US) radio */
-#define LIBNET_NTP_REF_WWVH     0x57575648  /* Kaui Hawaii (US) radio */
-#define LIBNET_NTP_REF_CHU      0x43485500  /* Ottaha (Canada) radio */
-#define LIBNET_NTP_REF_LORC     0x4c4f5243  /* LORAN-C radionavigation */
-#define LIBNET_NTP_REF_OMEG     0x4f4d4547  /* OMEGA radionavigation */
-#define LIBNET_NTP_REF_GPS      0x47505300  /* global positioning system */
-#define LIBNET_NTP_REF_GOES     0x474f4553  /* geostationary orbit env satellite */
+#define LIBNET_NTP_REF_LOCAL    (0x4c4f434c)  /* uncalibrated local clock */
+#define LIBNET_NTP_REF_PPS      (0x50505300)  /* atomic / pulse-per-second clock */
+#define LIBNET_NTP_REF_ACTS     (0x41435453)  /* NIST dialup modem */
+#define LIBNET_NTP_REF_USNO     (0x55534e4f)  /* USNO modem service */
+#define LIBNET_NTP_REF_PTB      (0x50544200)  /* PTB (German) modem service */
+#define LIBNET_NTP_REF_TDF      (0x54444600)  /* Allouis (French) radio */
+#define LIBNET_NTP_REF_DCF      (0x44434600)  /* Mainflingen (German) radio */
+#define LIBNET_NTP_REF_MSF      (0x4d534600)  /* Rugby (UK) radio */
+#define LIBNET_NTP_REF_WWV      (0x57575600)  /* Ft Collins (US) radio */
+#define LIBNET_NTP_REF_WWVB     (0x57575642)  /* Boulder (US) radio */
+#define LIBNET_NTP_REF_WWVH     (0x57575648)  /* Kaui Hawaii (US) radio */
+#define LIBNET_NTP_REF_CHU      (0x43485500)  /* Ottaha (Canada) radio */
+#define LIBNET_NTP_REF_LORC     (0x4c4f5243)  /* LORAN-C radionavigation */
+#define LIBNET_NTP_REF_OMEG     (0x4f4d4547)  /* OMEGA radionavigation */
+#define LIBNET_NTP_REF_GPS      (0x47505300)  /* global positioning system */
+#define LIBNET_NTP_REF_GOES     (0x474f4553)  /* geostationary orbit env satellite */
     struct libnet_ntp_hdr_l_fp ntp_ref_ts;  /* reference timestamp */ 
     struct libnet_ntp_hdr_l_fp ntp_orig_ts; /* originate timestamp */
     struct libnet_ntp_hdr_l_fp ntp_rec_ts;  /* receive timestamp */
@@ -1345,22 +1345,22 @@ struct libnet_ntp_hdr
 struct libnet_ospf_hdr
 {
     uint8_t ospf_v;          /* version */
-#define OSPFVERSION         2
+#define OSPFVERSION         (2)
     uint8_t ospf_type;       /* type */
-#define  LIBNET_OSPF_UMD    0   /* UMd monitoring packet */
-#define  LIBNET_OSPF_HELLO  1   /* HELLO packet */
-#define  LIBNET_OSPF_DBD    2   /* dataBase description packet */
-#define  LIBNET_OSPF_LSR    3   /* link state request packet */
-#define  LIBNET_OSPF_LSU    4   /* link state Update Packet */
-#define  LIBNET_OSPF_LSA    5   /* link state acknowledgement packet */
+#define  LIBNET_OSPF_UMD    (0)   /* UMd monitoring packet */
+#define  LIBNET_OSPF_HELLO  (1)   /* HELLO packet */
+#define  LIBNET_OSPF_DBD    (2)   /* dataBase description packet */
+#define  LIBNET_OSPF_LSR    (3)   /* link state request packet */
+#define  LIBNET_OSPF_LSU    (4)   /* link state Update Packet */
+#define  LIBNET_OSPF_LSA    (5)   /* link state acknowledgement packet */
     uint16_t   ospf_len;     /* length */
     struct in_addr ospf_rtr_id; /* source router ID */
     struct in_addr ospf_area_id;/* roam ID */
     uint16_t ospf_sum;         /* checksum */
     uint16_t ospf_auth_type;     /* authentication type */
-#define LIBNET_OSPF_AUTH_NULL   0   /* null password */
-#define LIBNET_OSPF_AUTH_SIMPLE 1   /* simple, plaintext, 8 int8_t password */
-#define LIBNET_OSPF_AUTH_MD5    2   /* MD5 */
+#define LIBNET_OSPF_AUTH_NULL   (0)   /* null password */
+#define LIBNET_OSPF_AUTH_SIMPLE (1)   /* simple, plaintext, 8 int8_t password */
+#define LIBNET_OSPF_AUTH_MD5    (2)   /* MD5 */
 };
 
 
@@ -1404,9 +1404,9 @@ struct libnet_dbd_hdr
     uint16_t dbd_mtu_len;    /* max length of IP dgram that this 'if' can use */
     uint8_t dbd_opts;        /* DBD packet options (from above) */
     uint8_t dbd_type;        /* type of exchange occurring */
-#define LIBNET_DBD_IBI      0x01    /* init */
-#define LIBNET_DBD_MBIT     0x02    /* more DBD packets are to come */
-#define LIBNET_DBD_MSBIT    0x04    /* If 1, sender is the master in the exchange */
+#define LIBNET_DBD_IBI      (0x01)    /* init */
+#define LIBNET_DBD_MBIT     (0x02)    /* more DBD packets are to come */
+#define LIBNET_DBD_MSBIT    (0x04)    /* If 1, sender is the master in the exchange */
     uint32_t  dbd_seq;         /* DBD sequence number */
 };
 
@@ -1414,11 +1414,11 @@ struct libnet_dbd_hdr
 /*
  *  used for the LS type field in all LS* headers
  */
-#define LIBNET_LS_TYPE_RTR      1   /* router-LSA */
-#define LIBNET_LS_TYPE_NET      2   /* network-LSA */
-#define LIBNET_LS_TYPE_IP       3   /* summary-LSA (IP Network) */
-#define LIBNET_LS_TYPE_ASBR     4   /* summary-LSA (ASBR) */
-#define LIBNET_LS_TYPE_ASEXT    5   /* AS-external-LSA */
+#define LIBNET_LS_TYPE_RTR      (1)   /* router-LSA */
+#define LIBNET_LS_TYPE_NET      (2)   /* network-LSA */
+#define LIBNET_LS_TYPE_IP       (3)   /* summary-LSA (IP Network) */
+#define LIBNET_LS_TYPE_ASBR     (4)   /* summary-LSA (ASBR) */
+#define LIBNET_LS_TYPE_ASEXT    (5)   /* AS-external-LSA */
 
 
 /*
@@ -1466,20 +1466,20 @@ struct libnet_lsa_hdr
 struct libnet_rtr_lsa_hdr
 {
     uint16_t rtr_flags;      /* set to help describe packet */
-#define LIBNET_RTR_FLAGS_W  0x0100  /* W bit */
-#define LIBNET_RTR_FLAGS_E  0x0200  /* E bit */
-#define LIBNET_RTR_FLAGS_B  0x0400  /* B bit */
+#define LIBNET_RTR_FLAGS_W  (0x0100)  /* W bit */
+#define LIBNET_RTR_FLAGS_E  (0x0200)  /* E bit */
+#define LIBNET_RTR_FLAGS_B  (0x0400)  /* B bit */
     uint16_t rtr_num;        /* number of links within that packet */
     uint32_t rtr_link_id;      /* describes link_data (look below) */
-#define LIBNET_LINK_ID_NBR_ID   1   /* Neighbors router ID, also can be 4 */
-#define LIBNET_LINK_ID_IP_DES   2   /* IP address of designated router */
-#define LIBNET_LINK_ID_SUB      3   /* IP subnet number */
+#define LIBNET_LINK_ID_NBR_ID   (1)   /* Neighbors router ID, also can be 4 */
+#define LIBNET_LINK_ID_IP_DES   (2)   /* IP address of designated router */
+#define LIBNET_LINK_ID_SUB      (3)   /* IP subnet number */
     uint32_t rtr_link_data;    /* Depending on link_id, info is here */
     uint8_t rtr_type;        /* Description of router link */
-#define LIBNET_RTR_TYPE_PTP     1   /* Point-To-Point */
-#define LIBNET_RTR_TYPE_TRANS   2   /* Connection to a "transit network" */
-#define LIBNET_RTR_TYPE_STUB    3   /* Connectin to a "stub network" */
-#define RTR_TYPE_VRTL   4   /* connects to a "virtual link" */
+#define LIBNET_RTR_TYPE_PTP     (1)   /* Point-To-Point */
+#define LIBNET_RTR_TYPE_TRANS   (2)   /* Connection to a "transit network" */
+#define LIBNET_RTR_TYPE_STUB    (3)   /* Connectin to a "stub network" */
+#define RTR_TYPE_VRTL   (4)   /* connects to a "virtual link" */
     uint8_t rtr_tos_num;     /* number of different TOS metrics for this link */
     uint16_t rtr_metric;     /* the "cost" of using this link */
 };
@@ -1514,7 +1514,7 @@ struct libnet_as_lsa_hdr
 {
     struct in_addr as_nmask;    /* Netmask for advertised destination */
     uint32_t  as_metric;           /* May have to set E bit in first 8bits */
-#define LIBNET_AS_E_BIT_ON 0x80000000  /* as_metric */
+#define LIBNET_AS_E_BIT_ON (0x80000000)  /* as_metric */
     struct in_addr as_fwd_addr; /* Forwarding address */
     uint32_t  as_rte_tag;          /* External route tag */
 };
@@ -1528,17 +1528,17 @@ struct libnet_as_lsa_hdr
 struct libnet_rip_hdr
 {
     uint8_t rip_cmd;         /* RIP command */
-#define RIPCMD_REQUEST   1  /* want info */
-#define RIPCMD_RESPONSE  2  /* responding to request */
-#define RIPCMD_TRACEON   3  /* turn tracing on */
-#define RIPCMD_TRACEOFF  4  /* turn it off */
-#define RIPCMD_POLL      5  /* like request, but anyone answers */
-#define RIPCMD_POLLENTRY 6  /* like poll, but for entire entry */
-#define RIPCMD_MAX       7  /* ? command */
+#define RIPCMD_REQUEST   (1)  /* want info */
+#define RIPCMD_RESPONSE  (2)  /* responding to request */
+#define RIPCMD_TRACEON   (3)  /* turn tracing on */
+#define RIPCMD_TRACEOFF  (4)  /* turn it off */
+#define RIPCMD_POLL      (5)  /* like request, but anyone answers */
+#define RIPCMD_POLLENTRY (6)  /* like poll, but for entire entry */
+#define RIPCMD_MAX       (7)  /* ? command */
     uint8_t rip_ver;         /* RIP version */
-#define RIPVER_0         0
-#define RIPVER_1         1
-#define RIPVER_2         2
+#define RIPVER_0         (0)
+#define RIPVER_1         (1)
+#define RIPVER_2         (2)
     uint16_t rip_rd;         /* Zero (v1) or Routing Domain (v2) */
     uint16_t rip_af;         /* Address family */
     uint16_t rip_rt;         /* Zero (v1) or Route Tag (v2) */
@@ -1552,29 +1552,29 @@ struct libnet_rip_hdr
  *  RPC headers
  *  Remote Procedure Call
  */
-#define LIBNET_RPC_CALL  0
-#define LIBNET_RPC_REPLY 1
-#define LIBNET_RPC_VERS  2
-#define LIBNET_RPC_LAST_FRAG 0x80000000
+#define LIBNET_RPC_CALL  (0)
+#define LIBNET_RPC_REPLY (1)
+#define LIBNET_RPC_VERS  (2)
+#define LIBNET_RPC_LAST_FRAG (0x80000000)
 
 /*
  *  Portmap defines
  */
-#define LIBNET_PMAP_PROGRAM          100000
-#define LIBNET_PMAP_PROC_NULL        0
-#define LIBNET_PMAP_PROC_SET         1
-#define LIBNET_PMAP_PROC_UNSET       2
-#define LIBNET_PMAP_PROC_GETADDR     3
-#define LIBNET_PMAP_PROC_DUMP        4
-#define LIBNET_PMAP_PROC_CALLIT      5
-#define LIBNET_PMAP_PROC_BCAST       5 /* Not a typo */
-#define LIBNET_PMAP_PROC_GETTIME     6
-#define LIBNET_PMAP_PROC_UADDR2TADDR 7
-#define LIBNET_PMAP_PROC_TADDR2UADDR 8
-#define LIBNET_PMAP_PROC_GETVERSADDR 9
-#define LIBNET_PMAP_PROC_INDIRECT    10
-#define LIBNET_PMAP_PROC_GETADDRLIST 11
-#define LIBNET_PMAP_PROC_GETSTAT     12
+#define LIBNET_PMAP_PROGRAM          (100000)
+#define LIBNET_PMAP_PROC_NULL        (0)
+#define LIBNET_PMAP_PROC_SET         (1)
+#define LIBNET_PMAP_PROC_UNSET       (2)
+#define LIBNET_PMAP_PROC_GETADDR     (3)
+#define LIBNET_PMAP_PROC_DUMP        (4)
+#define LIBNET_PMAP_PROC_CALLIT      (5)
+#define LIBNET_PMAP_PROC_BCAST       (5) /* Not a typo */
+#define LIBNET_PMAP_PROC_GETTIME     (6)
+#define LIBNET_PMAP_PROC_UADDR2TADDR (7)
+#define LIBNET_PMAP_PROC_TADDR2UADDR (8)
+#define LIBNET_PMAP_PROC_GETVERSADDR (9)
+#define LIBNET_PMAP_PROC_INDIRECT    (10)
+#define LIBNET_PMAP_PROC_GETADDRLIST (11)
+#define LIBNET_PMAP_PROC_GETSTAT     (12)
 
 /* There will be more to add... */
 
@@ -1666,28 +1666,28 @@ struct libnet_tcp_hdr
 #endif
     uint8_t  th_flags;       /* control flags */
 #ifndef TH_FIN
-#define TH_FIN    0x01      /* finished send data */
+#define TH_FIN    (0x01)      /* finished send data */
 #endif
 #ifndef TH_SYN
-#define TH_SYN    0x02      /* synchronize sequence numbers */
+#define TH_SYN    (0x02)      /* synchronize sequence numbers */
 #endif
 #ifndef TH_RST
-#define TH_RST    0x04      /* reset the connection */
+#define TH_RST    (0x04)      /* reset the connection */
 #endif
 #ifndef TH_PUSH
-#define TH_PUSH   0x08      /* push data to the app layer */
+#define TH_PUSH   (0x08)      /* push data to the app layer */
 #endif
 #ifndef TH_ACK
-#define TH_ACK    0x10      /* acknowledge */
+#define TH_ACK    (0x10)      /* acknowledge */
 #endif
 #ifndef TH_URG
-#define TH_URG    0x20      /* urgent! */
+#define TH_URG    (0x20)      /* urgent! */
 #endif
 #ifndef TH_ECE
-#define TH_ECE    0x40
+#define TH_ECE    (0x40)
 #endif
 #ifndef TH_CWR   
-#define TH_CWR    0x80
+#define TH_CWR    (0x80)
 #endif
     uint16_t th_win;         /* window */
     uint16_t th_sum;         /* checksum */
@@ -1700,9 +1700,9 @@ struct libnet_tcp_hdr
 struct libnet_token_ring_hdr
 {
     uint8_t  token_ring_access_control;
-#define LIBNET_TOKEN_RING_FRAME  0x10
+#define LIBNET_TOKEN_RING_FRAME  (0x10)
     uint8_t  token_ring_frame_control;
-#define LIBNET_TOKEN_RING_LLC_FRAME  0x40
+#define LIBNET_TOKEN_RING_LLC_FRAME  (0x40)
     uint8_t  token_ring_dhost[TOKEN_RING_ADDR_LEN];
     uint8_t  token_ring_shost[TOKEN_RING_ADDR_LEN];
     uint8_t  token_ring_llc_dsap;
@@ -1710,9 +1710,9 @@ struct libnet_token_ring_hdr
     uint8_t  token_ring_llc_control_field;
     uint8_t  token_ring_llc_org_code[LIBNET_ORG_CODE_SIZE];
     uint16_t token_ring_type;
-#define TOKEN_RING_TYPE_IP            0x0800  /* IP protocol */
-#define TOKEN_RING_TYPE_ARP           0x0806  /* addr. resolution protocol */
-#define TOKEN_RING_TYPE_REVARP        0x8035  /* reverse addr. resolution protocol */
+#define TOKEN_RING_TYPE_IP            (0x0800)  /* IP protocol */
+#define TOKEN_RING_TYPE_ARP           (0x0806)  /* addr. resolution protocol */
+#define TOKEN_RING_TYPE_REVARP        (0x8035)  /* reverse addr. resolution protocol */
 };
 
 struct libnet_token_ring_addr
@@ -1741,17 +1741,17 @@ struct libnet_sebek_hdr
 {
     uint32_t magic;           /* identify packets that should be hidden */
     uint16_t version;         /* protocol version, currently 1 */
-#define SEBEK_PROTO_VERSION 1
+#define SEBEK_PROTO_VERSION (1)
     uint16_t type;            /* type of record (read data is type 0, write data is type 1) */
-#define SEBEK_TYPE_READ     0  /* Currently, only read is supported */
-#define SEBEK_TYPE_WRITE    1
+#define SEBEK_TYPE_READ     (0)  /* Currently, only read is supported */
+#define SEBEK_TYPE_WRITE    (1)
     uint32_t counter;         /*  PDU counter used to identify when packet are lost */
     uint32_t time_sec;        /* seconds since EPOCH according to the honeypot */
     uint32_t time_usec;       /* residual microseconds */
     uint32_t pid;             /* PID */
     uint32_t uid;             /* UID */
     uint32_t fd;              /* FD */
-#define SEBEK_CMD_LENGTH   12
+#define SEBEK_CMD_LENGTH   (12)
     uint8_t cmd[SEBEK_CMD_LENGTH]; /* 12 first characters of the command */
     uint32_t length;          /* length in bytes of the PDU's body */
 };
@@ -1763,7 +1763,7 @@ struct libnet_sebek_hdr
  *  Static header size: 8 bytes
  */
 #ifndef IPPROTO_VRRP
-#define IPPROTO_VRRP 112    /* not everyone's got this */
+#define IPPROTO_VRRP (112)    /* not everyone's got this */
 #endif
 struct libnet_vrrp_hdr
 {
@@ -1775,16 +1775,16 @@ struct libnet_vrrp_hdr
     uint8_t vrrp_t:4,        /* packet type */
             vrrp_v:4;        /* protocol version */
 #endif
-#define LIBNET_VRRP_VERSION_01  0x1
-#define LIBNET_VRRP_VERSION_02  0x2
-#define LIBNET_VRRP_TYPE_ADVERT 0x1
+#define LIBNET_VRRP_VERSION_01  (0x1)
+#define LIBNET_VRRP_VERSION_02  (0x2)
+#define LIBNET_VRRP_TYPE_ADVERT (0x1)
     uint8_t vrrp_vrouter_id; /* virtual router id */
     uint8_t vrrp_priority;   /* priority */
     uint8_t vrrp_ip_count;   /* number of IP addresses */
     uint8_t vrrp_auth_type;  /* authorization type */
-#define LIBNET_VRRP_AUTH_NONE   0x1
-#define LIBNET_VRRP_AUTH_PASSWD 0x2
-#define LIBNET_VRRP_AUTH_IPAH   0x3
+#define LIBNET_VRRP_AUTH_NONE   (0x1)
+#define LIBNET_VRRP_AUTH_PASSWD (0x2)
+#define LIBNET_VRRP_AUTH_IPAH   (0x3)
     uint8_t vrrp_advert_int; /* advertisement interval */
     uint16_t vrrp_sum;       /* checksum */
     /* additional addresses */
@@ -1798,25 +1798,25 @@ struct libnet_vrrp_hdr
  */
 struct libnet_hsrp_hdr
 {
-#define LIBNET_HSRP_VERSION 0x0
+#define LIBNET_HSRP_VERSION (0x0)
     uint8_t version;           /* Version of the HSRP messages */
-#define LIBNET_HSRP_TYPE_HELLO 0x0
-#define LIBNET_HSRP_TYPE_COUP 0x1
-#define LIBNET_HSRP_TYPE_RESIGN 0x2
+#define LIBNET_HSRP_TYPE_HELLO (0x0)
+#define LIBNET_HSRP_TYPE_COUP (0x1)
+#define LIBNET_HSRP_TYPE_RESIGN (0x2)
     uint8_t opcode;            /* Type of message */
-#define LIBNET_HSRP_STATE_INITIAL 0x0
-#define LIBNET_HSRP_STATE_LEARN   0x1
-#define LIBNET_HSRP_STATE_LISTEN  0x2
-#define LIBNET_HSRP_STATE_SPEAK   0x4
-#define LIBNET_HSRP_STATE_STANDBY 0x8
-#define LIBNET_HSRP_STATE_ACTIVE  0x10
+#define LIBNET_HSRP_STATE_INITIAL (0x0)
+#define LIBNET_HSRP_STATE_LEARN   (0x1)
+#define LIBNET_HSRP_STATE_LISTEN  (0x2)
+#define LIBNET_HSRP_STATE_SPEAK   (0x4)
+#define LIBNET_HSRP_STATE_STANDBY (0x8)
+#define LIBNET_HSRP_STATE_ACTIVE  (0x10)
     uint8_t state;            /* Current state of the router */
     uint8_t hello_time;       /* Period in seconds between hello messages */
     uint8_t hold_time;        /* Seconds that the current hello message is valid */
     uint8_t priority;         /* Priority for the election proccess */
     uint8_t group;            /* Standby group */
     uint8_t reserved;         /* Reserved field */
-#define HSRP_AUTHDATA_LENGTH  8 
+#define HSRP_AUTHDATA_LENGTH  (8)
     uint8_t authdata[HSRP_AUTHDATA_LENGTH]; /* Password */
     uint32_t virtual_ip;      /* Virtual IP address */
 };

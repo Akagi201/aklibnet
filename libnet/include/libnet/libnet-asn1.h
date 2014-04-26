@@ -58,13 +58,13 @@
 
 #ifndef EIGHTBIT_SUBIDS
 typedef uint32_t  oid;
-#define MAX_SUBID   0xFFFFFFFF
+#define MAX_SUBID   (0xFFFFFFFF)
 #else
 typedef uint8_t  oid;
-#define MAX_SUBID   0xFF
+#define MAX_SUBID   (0xFF)
 #endif
 
-#define MAX_OID_LEN         64  /* max subid's in an oid */
+#define MAX_OID_LEN         (64)  /* max subid's in an oid */
 
 #define ASN_BOOLEAN         (0x01)
 #define ASN_INTEGER         (0x02)

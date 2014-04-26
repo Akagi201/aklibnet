@@ -46,23 +46,23 @@
  * Used for libnet's name resolution functions, specifies that no DNS lookups
  * should be performed and the IP address should be kept in numeric form.
  */
-#define LIBNET_DONT_RESOLVE 0
+#define LIBNET_DONT_RESOLVE (0) // 对应点分十进制IPv4地址
 
 /**
  * Used for libnet's name resolution functions, specifies that a DNS lookup
  * can be performed if needed to resolve the IP address to a canonical form.
  */
-#define LIBNET_RESOLVE      1
+#define LIBNET_RESOLVE      (1) // 对应主机名
 
 /**
  * Used several places, to specify "on" or "one"
  */
-#define LIBNET_ON	0
+#define LIBNET_ON	(0)
 
 /**
  * Used several places, to specify "on" or "one"
  */
-#define LIBNET_OFF	1
+#define LIBNET_OFF	(1)
 
 /**
  * IPv6 error code
@@ -76,50 +76,50 @@
 /**
  * Used for libnet_get_prand() to specify function disposition
  */ 
-#define LIBNET_PR2          0
-#define LIBNET_PR8          1
-#define LIBNET_PR16         2
-#define LIBNET_PRu16        3
-#define LIBNET_PR32         4
-#define LIBNET_PRu32        5
-#define LIBNET_PRAND_MAX    0xffffffff
+#define LIBNET_PR2          (0)
+#define LIBNET_PR8          (1)
+#define LIBNET_PR16         (2)
+#define LIBNET_PRu16        (3)
+#define LIBNET_PR32         (4)
+#define LIBNET_PRu32        (5)
+#define LIBNET_PRAND_MAX    (0xffffffff)
 
 /**
  * The biggest an IP packet can be -- 65,535 bytes.
  */
-#define LIBNET_MAX_PACKET   0xffff
+#define LIBNET_MAX_PACKET   (0xffff)
 #ifndef IP_MAXPACKET
-#define IP_MAXPACKET        0xffff
+#define IP_MAXPACKET        (0xffff)_
 #endif
 
 
 /* ethernet addresses are 6 octets long */
 #ifndef ETHER_ADDR_LEN
-#define ETHER_ADDR_LEN      0x6
+#define ETHER_ADDR_LEN      (0x6)
 #endif
 
 /* FDDI addresses are 6 octets long */
 #ifndef FDDI_ADDR_LEN
-#define FDDI_ADDR_LEN       0x6
+#define FDDI_ADDR_LEN       (0x6)
 #endif
 
 /* token ring addresses are 6 octets long */
 #ifndef TOKEN_RING_ADDR_LEN
-#define TOKEN_RING_ADDR_LEN 0x6
+#define TOKEN_RING_ADDR_LEN (0x6)
 #endif
 
 /* LLC Organization Code is 3 bytes long */
-#define LIBNET_ORG_CODE_SIZE  0x3
+#define LIBNET_ORG_CODE_SIZE  (0x3)
 
 /**
  * The libnet error buffer is 256 bytes long.
  */ 
-#define LIBNET_ERRBUF_SIZE      0x100
+#define LIBNET_ERRBUF_SIZE      (0x100)
 
 /**
  * IP and TCP options can be up to 40 bytes long.
  */
-#define LIBNET_MAXOPTION_SIZE   0x28
+#define LIBNET_MAXOPTION_SIZE   (0x28)
 
 /* some BSD variants have this endianess problem */
 #if (LIBNET_BSD_BYTE_SWAP)
@@ -173,7 +173,7 @@ if (payload_s)                                                               \
 #define LIBNET_ISADVMODE(x) (x & 0x08)
 
 /* context queue macros and constants */
-#define LIBNET_LABEL_SIZE   64
+#define LIBNET_LABEL_SIZE   (64)
 #define LIBNET_LABEL_DEFAULT "cardshark"
 #define CQ_LOCK_UNLOCKED    (u_int)0x00000000
 #define CQ_LOCK_READ        (u_int)0x00000001

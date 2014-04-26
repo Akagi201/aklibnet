@@ -111,6 +111,16 @@ libnet_addr2name4_r(uint32_t in, uint8_t use_name, char *hostname,
     }
 }
 
+/*
+ * @brief 域名解析
+ *
+ * @param[in] host_name: 标准的ascii字符串, 以NULL结尾, 可以是点分十进制IPv4地址(如: "192.168.90.201");
+ * 可以是FQDN, 比如: "www.akagi201.org", 甚至是一般的主机名, 只要你确信该主机名可以通过域名系统(包括/etc/hosts文件)得到正向解析.
+ *
+ * @param[in] use_name: 在/include/libnet/libnet-macros.h中有2个宏对应了use_name的取值 LIBNET_DONT_RESOLVE / LIBNET_RESOLVE
+ *
+ * @return 无论主机使用什么字节序, 返回大端的网络序
+ */
 uint32_t
 libnet_name2addr4(libnet_t *l, char *host_name, uint8_t use_name)
 {
