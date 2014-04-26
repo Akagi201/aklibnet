@@ -644,7 +644,7 @@ libnet_autobuild_arp(uint16_t op, const uint8_t *sha, const uint8_t *spa, const 
 uint8_t *tpa, libnet_t *l);
 
 /**
- * Builds an RFC 793 Transmission Control Protocol (TCP) header.
+ * Builds an RFC 793 Transmission Control Protocol (TCP) header. 在IP报文上构造TCP头
  * @param sp source port
  * @param dp destination port
  * @param seq sequence number
@@ -974,7 +974,7 @@ libnet_build_igmp(uint8_t type, uint8_t reserved, uint16_t sum, uint32_t ip,
 const uint8_t* payload, uint32_t payload_s, libnet_t *l, libnet_ptag_t ptag);
 
 /**
- * Builds a version 4 RFC 791 Internet Protocol (IP) header.
+ * Builds a version 4 RFC 791 Internet Protocol (IP) header. 构造IPv4头
  *
  * @param ip_len total length of the IP packet including all subsequent data (subsequent
  *   data includes any IP options and IP options padding)

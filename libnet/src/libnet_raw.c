@@ -40,6 +40,10 @@ typedef int socklen_t;
    with conditionals on __WIN32__ that are never reachable, what happened?
    */
 #if defined (__WIN32__)
+
+/*
+ * @brief 打开IPv4上指定协议类型的raw_socket
+ */
 int
 libnet_open_raw4(libnet_t *l)
 {
