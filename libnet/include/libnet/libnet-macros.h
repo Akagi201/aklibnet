@@ -89,7 +89,7 @@
  */
 #define LIBNET_MAX_PACKET   (0xffff)
 #ifndef IP_MAXPACKET
-#define IP_MAXPACKET        (0xffff)_
+#define IP_MAXPACKET        (0xffff)
 #endif
 
 
